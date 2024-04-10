@@ -2,7 +2,7 @@
 
 `include "i2c_master_defines.v"
 
-
+//inserting a test comment for git 
 
 module i2c_master_single_byte  #(parameter CLK_RATIO = 25)
     (
