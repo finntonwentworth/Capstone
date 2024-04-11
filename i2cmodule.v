@@ -2,7 +2,6 @@
 
 `include "i2c_master_defines.v"
 
-//inserting a test comment for git 
 
 module i2c_master_single_byte  #(parameter CLK_RATIO = 25)
     (
@@ -12,13 +11,13 @@ module i2c_master_single_byte  #(parameter CLK_RATIO = 25)
 
  
 
-       input [6:0] i_slave_addr, 
-       input       i_write_start, 
-       input       i_rd_start, 
-       input [7:0] i_wr_byte,
-       output reg  o_busy,
+       input [6:0]  i_slave_addr, 
+       input        i_wr_start, 
+       input        i_rd_start, 
+       input [7:0]  i_wr_byte,
+       output reg   o_busy,
        output [7:0] o_rd_byte, 
-       output      o_error,
+       output       o_error,
 
 
        inout       io_scl,
@@ -26,17 +25,24 @@ module i2c_master_single_byte  #(parameter CLK_RATIO = 25)
    );
 
     localparam [15:0] CLK_COUNT = CLK_RATIO / 5 - 1; 
+    
+    localparam [2:0]  IDLE            = 3'b000;
+    localparam [2:0]  WAIT_SLAVE_ADDR = 3'b001;
+    localparam [2:0]  SEND_WR_DATA    = 3'b010;
+    localparam [2:0]  WAIT_WR_DATA    = 3'b011;          
+    localparam [2:0]  CLEANUP         = 3'b100;          
 
-           
+
     wire w_sck_en, w_sda_en; 
     wire w_arb_lost, w_cmd_ack, w_slave_ack; 
-    reg  r_cmd_cmd; 
-    reg  r_cmd_stop;
-    reg  r_wr_start, r_rd_start; 
+    reg  r_cmd_start, r_cmd_stop, r_wr_cmd, r_rd_cmd, r_cmd_ack;
     reg [7:0] r_cmd_byte, r_wr_byte; 
-    reg r_cmd_ack; 
+     
 
-    assign o_done = w_arb_lost | w_cmd_ack; 
+    
+    reg [2:0] r_SM_Main; 
+
+   // assign o_done = w_arb_lost | w_cmd_ack; 
 
    // hookup byte controller - uses includes?
    i2c_master_byte_ctrl byte_controller (
@@ -108,14 +114,14 @@ module i2c_master_single_byte  #(parameter CLK_RATIO = 25)
     begin 
         if (i_rst)
         begin
-            r_SM_Main  <= IDLE;
-            r_wr_start <= 1'b0; 
-            o_busy     <= 1'b0;
+            r_SM_Main   <= IDLE;
+            r_cmd_start <= 1'b0; 
+            o_busy      <= 1'b0;
         end 
         else 
         begin
             //Default assignments 
-            r_wr_start  <= 1'b0; 
+          //  r_wr_start  <= 1'b0; 
             r_cmd_start <= 1'b0;
             case(r_SM_Main) 
             IDLE:
@@ -123,21 +129,25 @@ module i2c_master_single_byte  #(parameter CLK_RATIO = 25)
                   
                 if (i_wr_start)
                 begin 
-                        r_wr_start    <= 1'b1; 
-                        r_cmd_start   <= 1'b1; 
+                     //   r_wr_start    <= 1'b1; 
+                        r_cmd_start   <= 1'b1;
+                        r_wr_cmd      <= 1'b1; 
                         o_busy        <= 1'b1; 
                         r_wr_byte     <= i_wr_byte; 
                         r_cmd_byte    <= {i_slave_addr,1'b0}; //concatenate slave address with 0 for write command 
-                        r_SM_Main     <= WAIT_SLAVE_ADDRESS; 
+                        r_SM_Main     <= WAIT_SLAVE_ADDR; 
                 end
                 else 
                 begin
-                        o_busy <= 1'b0;
+                        o_busy   <= 1'b0;
+                        r_rd_cmd <= 1'b0;
+                        r_wr_cmd <= 1'b0; 
+                        
                 end
             end
             // wait for cmd ack from core to know slave address is written 
 
-            WAIT_SLAVE_ADDRESS:
+            WAIT_SLAVE_ADDR:
             begin
                // done when cmd ack has a falling edge  
                 if(r_cmd_ack & ~w_cmd_ack)
@@ -152,7 +162,7 @@ module i2c_master_single_byte  #(parameter CLK_RATIO = 25)
                 r_cmd_start <= 1'b1;
                 r_cmd_byte  <= r_wr_byte;
                 r_SM_Main   <= WAIT_WR_DATA; 
-               
+              
             end
             WAIT_WR_DATA:
             begin 
