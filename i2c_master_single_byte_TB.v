@@ -6,7 +6,8 @@ module  i2c_master_single_byte_TB  ();
 
 
   reg r_clk; 
-  reg r_rst; 
+  reg r_rst;
+  //is this necessary for the module? 
   reg r_enable;
 
 
@@ -57,27 +58,27 @@ module  i2c_master_single_byte_TB  ();
       .clk(r_clk), 
       .rst(r_rst),
       .en(r_enable),
-      .addr(
+      .addr() 
   );
        
  
  
  
-        always #5 clk = ~clk; 
+        always #5 r_clk = ~r_clk; 
 
         initial begin 
         #10; 
-        @(posedge r_clock);
-        r_reset <= 1'b0; 
-        repeat(10) @(posedge r_clock); 
+        @(posedge r_clk);
+        r_rst <= 1'b0; 
+        repeat(10) @(posedge r_clk); 
 
 
 
         r_wr_start <= 1'b1; 
         r_wr_byte  <= 8'hAC; 
-        @(posedge r_clock);
+        @(posedge r_clk);
         r_wr_start <= 1'b0; 
-        @(posedge r_clock);
+        @(posedge r_clk);
 
         #300000; 
         $display("\n\nstatus: %t Testbench done", $time); 
