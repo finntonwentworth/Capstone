@@ -25,7 +25,8 @@ module  i2c_master_single_byte #(parameter CLK_RATIO = 25)
    );
 
     localparam [15:0] CLK_COUNT = CLK_RATIO / 5 - 1; 
-    
+
+    //State enumerations  
     localparam [2:0]  IDLE            = 3'b000;
     localparam [2:0]  WAIT_SLAVE_ADDR = 3'b001;
     localparam [2:0]  SEND_WR_DATA    = 3'b010;
@@ -120,10 +121,11 @@ module  i2c_master_single_byte #(parameter CLK_RATIO = 25)
         end 
         else 
         begin
-            //Default assignments 
-          //  r_wr_start  <= 1'b0; 
+          //Default assignments 
             r_cmd_start <= 1'b0;
-            case(r_SM_Main) 
+            r_cmd_stop  <= 1'b0;
+
+        case (r_SM_Main) 
             IDLE:
             begin 
                   
@@ -159,7 +161,7 @@ module  i2c_master_single_byte #(parameter CLK_RATIO = 25)
            //send data to write to slave
             SEND_WR_DATA:
             begin
-                r_cmd_start <= 1'b1;
+                r_cmd_stop  <= 1'b1;
                 r_cmd_byte  <= r_wr_byte;
                 r_SM_Main   <= WAIT_WR_DATA; 
               
