@@ -1,6 +1,6 @@
-//`include "timescale.v"
+`include "timescale.v"
 
-//`include "i2c_master_defines.v"
+`include "i2c_master_defines.v"
 
 
 module  i2c_master_single_byte #(parameter CLK_RATIO = 25)
@@ -25,6 +25,9 @@ module  i2c_master_single_byte #(parameter CLK_RATIO = 25)
    );
 
     localparam [15:0] CLK_COUNT = CLK_RATIO / 5 - 1; 
+    localparam [6:0 ] SLAVE_ADDR= 7'b1010110;
+    
+
 
     //State enumerations  
     localparam [2:0]  IDLE            = 3'b000;
@@ -87,24 +90,11 @@ module  i2c_master_single_byte #(parameter CLK_RATIO = 25)
        r_cmd_ack <= w_cmd_ack;
    end 
 
-   //see if necessary - handled by state machine? 
-   /*
-   always @ (posedge i_rst or posedge i_clk) begin 
-       if (i_rst) begin 
-           o_busy <= 1'b0;
-       end 
-       else begin 
-           if(~o_busy & (i_wr_start | i_rd_start))
-           begin 
-                o_busy <= 1'b1; 
-            end
-            else if (o_busy & (w_cmd_ack))
-            begin 
-                o_busy <= 1'b0; 
-            end
-        end
-    end
-*/
+//logic to start write - i_wr_start from gpio?
+
+
+
+
 
 
     //Main state machine 
