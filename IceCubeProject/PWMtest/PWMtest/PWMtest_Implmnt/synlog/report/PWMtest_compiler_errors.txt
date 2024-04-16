@@ -1,0 +1,2 @@
+@E: CS219 :"D:\EGR401\CODE_WIP\ESC_PWM.v":113:1:113:6|Expecting one of the keywords module, primitive or macromodule
+

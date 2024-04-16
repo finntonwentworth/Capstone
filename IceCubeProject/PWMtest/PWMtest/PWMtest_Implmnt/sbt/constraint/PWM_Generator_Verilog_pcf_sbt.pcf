@@ -1,0 +1,23 @@
+# ##############################################################################
+
+# iCEcube PCF
+
+# Version:            2020.12.27943
+
+# File Generated:     Nov 26 2023 15:31:56
+
+# Family & Device:    iCE40HX1K
+
+# Package:            TQ144
+
+# ##############################################################################
+
+###IOSet List 7
+set_io PWM_OUT0 62
+set_io clk 21
+set_io decrease_duty0 61
+set_io increase_duty1 44
+set_io PWM_OUT1 47
+set_io decrease_duty1 45
+set_io increase_duty0 60
+

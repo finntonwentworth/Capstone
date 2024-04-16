@@ -1,0 +1,880 @@
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: D:\IceCube2\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-SVJSVPL
+
+# Sun Nov 26 20:44:54 2023
+
+#Implementation: PWMtest_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"D:\IceCube2\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"D:\IceCube2\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"D:\IceCube2\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"D:\IceCube2\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"D:\IceCube2\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"D:\EGR401\CODE_WIP\ESC_PWM.v" (library work)
+Verilog syntax check successful!
+File D:\EGR401\CODE_WIP\ESC_PWM.v changed - recompiling
+Selecting top level module PWM_Generator_Verilog
+@N: CG364 :"D:\EGR401\CODE_WIP\ESC_PWM.v":132:7:132:13|Synthesizing module DFF_PWM in library work.
+
+@N: CG364 :"D:\EGR401\CODE_WIP\ESC_PWM.v":1:7:1:27|Synthesizing module PWM_Generator_Verilog in library work.
+
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[1] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[2] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[3] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[4] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[5] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[6] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[7] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[8] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[9] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[10] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[11] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[12] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[13] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[14] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[15] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[16] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[17] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[18] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[19] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[20] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[21] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[22] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[23] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[24] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[25] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[26] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[27] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":103:1:103:6|Register bit counter_PWM0[18] is always 0.
+@W: CL260 :"D:\EGR401\CODE_WIP\ESC_PWM.v":103:1:103:6|Pruning register bit 18 of counter_PWM0[18:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Pruning register bits 27 to 1 of counter_debounce[27:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 74MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Nov 26 20:44:54 2023
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"D:\EGR401\CODE_WIP\ESC_PWM.v":1:7:1:27|Selected library: work cell: PWM_Generator_Verilog view verilog as top level
+@N: NF107 :"D:\EGR401\CODE_WIP\ESC_PWM.v":1:7:1:27|Selected library: work cell: PWM_Generator_Verilog view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Nov 26 20:44:54 2023
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Nov 26 20:44:54 2023
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\synwork\PWMtest_comp.srs changed - recompiling
+@N: NF107 :"D:\EGR401\CODE_WIP\ESC_PWM.v":1:7:1:27|Selected library: work cell: PWM_Generator_Verilog view verilog as top level
+@N: NF107 :"D:\EGR401\CODE_WIP\ESC_PWM.v":1:7:1:27|Selected library: work cell: PWM_Generator_Verilog view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Nov 26 20:44:55 2023
+
+###########################################################]
+Pre-mapping Report
+
+# Sun Nov 26 20:44:56 2023
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\PWMtest_scck.rpt 
+Printing clock  summary report in "D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\PWMtest_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=16  set on top level netlist PWM_Generator_Verilog
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+
+Clock Summary
+*****************
+
+Start                         Requested     Requested     Clock        Clock                     Clock
+Clock                         Frequency     Period        Type         Group                     Load 
+------------------------------------------------------------------------------------------------------
+PWM_Generator_Verilog|clk     136.5 MHz     7.326         inferred     Autoconstr_clkgroup_0     80   
+======================================================================================================
+
+@W: MT529 :"d:\egr401\code_wip\esc_pwm.v":135:0:135:5|Found inferred clock PWM_Generator_Verilog|clk which controls 80 sequential elements including PWM_DFF1.Q. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\PWMtest.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 133MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Nov 26 20:44:56 2023
+
+###########################################################]
+Map & Optimize Report
+
+# Sun Nov 26 20:44:56 2023
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+@W: FX1039 :"d:\egr401\code_wip\esc_pwm.v":113:1:113:6|User-specified initial value defined for instance DUTY_CYCLE1[16:0] is being ignored. 
+@W: FX1039 :"d:\egr401\code_wip\esc_pwm.v":95:1:95:6|User-specified initial value defined for instance DUTY_CYCLE0[18:0] is being ignored. 
+@W: FX1039 :"d:\egr401\code_wip\esc_pwm.v":121:1:121:6|User-specified initial value defined for instance counter_PWM1[16:0] is being ignored. 
+@W: FX1039 :"d:\egr401\code_wip\esc_pwm.v":103:1:103:6|User-specified initial value defined for instance counter_PWM0[17:0] is being ignored. 
+@W: FX1039 :"d:\egr401\code_wip\esc_pwm.v":45:1:45:6|User-specified initial value defined for instance counter_debounce[0] is being ignored. 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+@N: MO231 :"d:\egr401\code_wip\esc_pwm.v":121:1:121:6|Found counter in view:work.PWM_Generator_Verilog(verilog) instance counter_PWM1[16:0] 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+@N: BN362 :"d:\egr401\code_wip\esc_pwm.v":113:1:113:6|Removing sequential instance DUTY_CYCLE1[1] (in view: work.PWM_Generator_Verilog(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\egr401\code_wip\esc_pwm.v":113:1:113:6|Removing sequential instance DUTY_CYCLE1[2] (in view: work.PWM_Generator_Verilog(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\egr401\code_wip\esc_pwm.v":113:1:113:6|Removing sequential instance DUTY_CYCLE1[3] (in view: work.PWM_Generator_Verilog(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\egr401\code_wip\esc_pwm.v":113:1:113:6|Removing sequential instance DUTY_CYCLE1[0] (in view: work.PWM_Generator_Verilog(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\egr401\code_wip\esc_pwm.v":95:1:95:6|Removing sequential instance DUTY_CYCLE0[0] (in view: work.PWM_Generator_Verilog(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\egr401\code_wip\esc_pwm.v":95:1:95:6|Removing sequential instance DUTY_CYCLE0[1] (in view: work.PWM_Generator_Verilog(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\egr401\code_wip\esc_pwm.v":95:1:95:6|Removing sequential instance DUTY_CYCLE0[2] (in view: work.PWM_Generator_Verilog(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\egr401\code_wip\esc_pwm.v":95:1:95:6|Removing sequential instance DUTY_CYCLE0[3] (in view: work.PWM_Generator_Verilog(verilog)) because it does not drive other instances.
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -2.96ns		 122 /        72
+   2		0h:00m:00s		    -2.96ns		 121 /        72
+   3		0h:00m:00s		    -1.56ns		 120 /        72
+
+   4		0h:00m:00s		    -1.56ns		 124 /        72
+
+
+   5		0h:00m:00s		    -1.56ns		 126 /        72
+@N: FX1016 :"d:\egr401\code_wip\esc_pwm.v":19:7:19:9|SB_GB_IO inserted on the port clk.
+@N: FX1017 :|SB_GB inserted on the net un1_counter_PWM0_0.
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 72 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       clk_ibuf_gb_io      SB_GB_IO               72         counter_PWM0[0]
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 134MB)
+
+Writing Analyst data base D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\synwork\PWMtest_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+Writing EDIF Netlist and constraint files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: FX1056 |Writing EDF file: D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\PWMtest.edf
+L-2016.09L+ice40
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+@W: MT420 |Found inferred clock PWM_Generator_Verilog|clk with period 11.17ns. Please declare a user-defined clock on object "p:clk"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sun Nov 26 20:44:57 2023
+#
+
+
+Top view:               PWM_Generator_Verilog
+Requested Frequency:    89.6 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -1.970
+
+                              Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock                Frequency     Frequency     Period        Period        Slack      Type         Group                
+-----------------------------------------------------------------------------------------------------------------------------------
+PWM_Generator_Verilog|clk     89.6 MHz      76.1 MHz      11.165        13.136        -1.970     inferred     Autoconstr_clkgroup_0
+===================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------------------------
+Starting                   Ending                     |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------------------------
+PWM_Generator_Verilog|clk  PWM_Generator_Verilog|clk  |  11.165      -1.970  |  No paths    -      |  No paths    -      |  No paths    -    
+=============================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: PWM_Generator_Verilog|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                    Starting                                                         Arrival           
+Instance            Reference                     Type       Pin     Net             Time        Slack 
+                    Clock                                                                              
+-------------------------------------------------------------------------------------------------------
+DUTY_CYCLE0[7]      PWM_Generator_Verilog|clk     SB_DFF     Q       PWM_OUT0_7      0.540       -1.970
+DUTY_CYCLE0[8]      PWM_Generator_Verilog|clk     SB_DFF     Q       PWM_OUT0_8      0.540       -1.921
+DUTY_CYCLE0[16]     PWM_Generator_Verilog|clk     SB_DFF     Q       PWM_OUT0_16     0.540       -1.921
+DUTY_CYCLE0[4]      PWM_Generator_Verilog|clk     SB_DFF     Q       PWM_OUT0_4      0.540       -1.900
+DUTY_CYCLE0[9]      PWM_Generator_Verilog|clk     SB_DFF     Q       un7lto9         0.540       -1.900
+DUTY_CYCLE0[6]      PWM_Generator_Verilog|clk     SB_DFF     Q       PWM_OUT0_6      0.540       -1.872
+DUTY_CYCLE0[17]     PWM_Generator_Verilog|clk     SB_DFF     Q       PWM_OUT0_17     0.540       -1.872
+DUTY_CYCLE0[5]      PWM_Generator_Verilog|clk     SB_DFF     Q       PWM_OUT0_5      0.540       -1.851
+DUTY_CYCLE0[18]     PWM_Generator_Verilog|clk     SB_DFF     Q       PWM_OUT0_18     0.540       -1.851
+DUTY_CYCLE0[10]     PWM_Generator_Verilog|clk     SB_DFF     Q       un7lto10        0.540       -1.837
+=======================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                    Starting                                                                 Required           
+Instance            Reference                     Type       Pin     Net                     Time         Slack 
+                    Clock                                                                                       
+----------------------------------------------------------------------------------------------------------------
+DUTY_CYCLE0[18]     PWM_Generator_Verilog|clk     SB_DFF     D       DUTY_CYCLE0_RNO[18]     11.060       -1.970
+DUTY_CYCLE0[17]     PWM_Generator_Verilog|clk     SB_DFF     D       DUTY_CYCLE0_RNO[17]     11.060       -1.830
+DUTY_CYCLE0[16]     PWM_Generator_Verilog|clk     SB_DFF     D       DUTY_CYCLE0_RNO[16]     11.060       -1.690
+DUTY_CYCLE1[16]     PWM_Generator_Verilog|clk     SB_DFF     D       DUTY_CYCLE1_RNO[16]     11.060       -1.655
+DUTY_CYCLE0[15]     PWM_Generator_Verilog|clk     SB_DFF     D       DUTY_CYCLE0_RNO[15]     11.060       -1.550
+DUTY_CYCLE1[15]     PWM_Generator_Verilog|clk     SB_DFF     D       DUTY_CYCLE1_RNO[15]     11.060       -1.515
+DUTY_CYCLE0[14]     PWM_Generator_Verilog|clk     SB_DFF     D       DUTY_CYCLE0_RNO[14]     11.060       -1.410
+DUTY_CYCLE1[14]     PWM_Generator_Verilog|clk     SB_DFF     D       DUTY_CYCLE1_RNO[14]     11.060       -1.375
+DUTY_CYCLE0[13]     PWM_Generator_Verilog|clk     SB_DFF     D       DUTY_CYCLE0_RNO[13]     11.060       -1.269
+DUTY_CYCLE1[13]     PWM_Generator_Verilog|clk     SB_DFF     D       DUTY_CYCLE1_RNO[13]     11.060       -1.234
+================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      11.165
+    - Setup time:                            0.105
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         11.060
+
+    - Propagation time:                      13.031
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.970
+
+    Number of logic level(s):                19
+    Starting point:                          DUTY_CYCLE0[7] / Q
+    Ending point:                            DUTY_CYCLE0[18] / D
+    The start point is clocked by            PWM_Generator_Verilog|clk [rising] on pin C
+    The end   point is clocked by            PWM_Generator_Verilog|clk [rising] on pin C
+
+Instance / Net                                 Pin      Pin               Arrival     No. of    
+Name                              Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------
+DUTY_CYCLE0[7]                    SB_DFF       Q        Out     0.540     0.540       -         
+PWM_OUT0_7                        Net          -        -       1.599     -           6         
+DUTY_CYCLE0_RNITHPE1[7]           SB_LUT4      I0       In      -         2.139       -         
+DUTY_CYCLE0_RNITHPE1[7]           SB_LUT4      O        Out     0.449     2.588       -         
+un7lto10_0                        Net          -        -       1.371     -           2         
+DUTY_CYCLE0_RNI85EK3_0[11]        SB_LUT4      I0       In      -         3.959       -         
+DUTY_CYCLE0_RNI85EK3_0[11]        SB_LUT4      O        Out     0.449     4.408       -         
+un7lt15_0_0                       Net          -        -       1.371     -           1         
+PWM_DFF2.Q_RNIGUU86               SB_LUT4      I3       In      -         5.779       -         
+PWM_DFF2.Q_RNIGUU86               SB_LUT4      O        Out     0.287     6.066       -         
+DUTY_CYCLE014_i                   Net          -        -       1.371     -           10        
+un1_DUTY_CYCLE0_2_cry_4_c_RNO     SB_LUT4      I1       In      -         7.437       -         
+un1_DUTY_CYCLE0_2_cry_4_c_RNO     SB_LUT4      O        Out     0.400     7.837       -         
+un1_DUTY_CYCLE0_2_cry_4_c_RNO     Net          -        -       0.905     -           1         
+un1_DUTY_CYCLE0_2_cry_4_c         SB_CARRY     I0       In      -         8.742       -         
+un1_DUTY_CYCLE0_2_cry_4_c         SB_CARRY     CO       Out     0.258     8.999       -         
+un1_DUTY_CYCLE0_2_cry_4           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_5_c         SB_CARRY     CI       In      -         9.013       -         
+un1_DUTY_CYCLE0_2_cry_5_c         SB_CARRY     CO       Out     0.126     9.140       -         
+un1_DUTY_CYCLE0_2_cry_5           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_6_c         SB_CARRY     CI       In      -         9.153       -         
+un1_DUTY_CYCLE0_2_cry_6_c         SB_CARRY     CO       Out     0.126     9.280       -         
+un1_DUTY_CYCLE0_2_cry_6           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_7_0_c       SB_CARRY     CI       In      -         9.294       -         
+un1_DUTY_CYCLE0_2_cry_7_0_c       SB_CARRY     CO       Out     0.126     9.420       -         
+un1_DUTY_CYCLE0_2_cry_7           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_8_c         SB_CARRY     CI       In      -         9.434       -         
+un1_DUTY_CYCLE0_2_cry_8_c         SB_CARRY     CO       Out     0.126     9.560       -         
+un1_DUTY_CYCLE0_2_cry_8           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_9_c         SB_CARRY     CI       In      -         9.574       -         
+un1_DUTY_CYCLE0_2_cry_9_c         SB_CARRY     CO       Out     0.126     9.700       -         
+un1_DUTY_CYCLE0_2_cry_9           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_10_c        SB_CARRY     CI       In      -         9.714       -         
+un1_DUTY_CYCLE0_2_cry_10_c        SB_CARRY     CO       Out     0.126     9.841       -         
+un1_DUTY_CYCLE0_2_cry_10          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_11_0_c      SB_CARRY     CI       In      -         9.854       -         
+un1_DUTY_CYCLE0_2_cry_11_0_c      SB_CARRY     CO       Out     0.126     9.981       -         
+un1_DUTY_CYCLE0_2_cry_11          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_12_c        SB_CARRY     CI       In      -         9.995       -         
+un1_DUTY_CYCLE0_2_cry_12_c        SB_CARRY     CO       Out     0.126     10.121      -         
+un1_DUTY_CYCLE0_2_cry_12          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_13_0_c      SB_CARRY     CI       In      -         10.135      -         
+un1_DUTY_CYCLE0_2_cry_13_0_c      SB_CARRY     CO       Out     0.126     10.261      -         
+un1_DUTY_CYCLE0_2_cry_13          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_14_0_c      SB_CARRY     CI       In      -         10.275      -         
+un1_DUTY_CYCLE0_2_cry_14_0_c      SB_CARRY     CO       Out     0.126     10.401      -         
+un1_DUTY_CYCLE0_2_cry_14          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_15_0_c      SB_CARRY     CI       In      -         10.415      -         
+un1_DUTY_CYCLE0_2_cry_15_0_c      SB_CARRY     CO       Out     0.126     10.541      -         
+un1_DUTY_CYCLE0_2_cry_15          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_16_0_c      SB_CARRY     CI       In      -         10.556      -         
+un1_DUTY_CYCLE0_2_cry_16_0_c      SB_CARRY     CO       Out     0.126     10.682      -         
+un1_DUTY_CYCLE0_2_cry_16          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_17_0_c      SB_CARRY     CI       In      -         10.696      -         
+un1_DUTY_CYCLE0_2_cry_17_0_c      SB_CARRY     CO       Out     0.126     10.822      -         
+un1_DUTY_CYCLE0_2_cry_17          Net          -        -       0.386     -           1         
+DUTY_CYCLE0_RNO[18]               SB_LUT4      I3       In      -         11.208      -         
+DUTY_CYCLE0_RNO[18]               SB_LUT4      O        Out     0.316     11.524      -         
+DUTY_CYCLE0_RNO[18]               Net          -        -       1.507     -           1         
+DUTY_CYCLE0[18]                   SB_DFF       D        In      -         13.031      -         
+================================================================================================
+Total path delay (propagation time + setup) of 13.136 is 4.444(33.8%) logic and 8.692(66.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      11.165
+    - Setup time:                            0.105
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         11.060
+
+    - Propagation time:                      12.981
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.921
+
+    Number of logic level(s):                19
+    Starting point:                          DUTY_CYCLE0[8] / Q
+    Ending point:                            DUTY_CYCLE0[18] / D
+    The start point is clocked by            PWM_Generator_Verilog|clk [rising] on pin C
+    The end   point is clocked by            PWM_Generator_Verilog|clk [rising] on pin C
+
+Instance / Net                                 Pin      Pin               Arrival     No. of    
+Name                              Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------
+DUTY_CYCLE0[8]                    SB_DFF       Q        Out     0.540     0.540       -         
+PWM_OUT0_8                        Net          -        -       1.599     -           7         
+DUTY_CYCLE0_RNITHPE1[7]           SB_LUT4      I1       In      -         2.139       -         
+DUTY_CYCLE0_RNITHPE1[7]           SB_LUT4      O        Out     0.400     2.539       -         
+un7lto10_0                        Net          -        -       1.371     -           2         
+DUTY_CYCLE0_RNI85EK3_0[11]        SB_LUT4      I0       In      -         3.910       -         
+DUTY_CYCLE0_RNI85EK3_0[11]        SB_LUT4      O        Out     0.449     4.359       -         
+un7lt15_0_0                       Net          -        -       1.371     -           1         
+PWM_DFF2.Q_RNIGUU86               SB_LUT4      I3       In      -         5.729       -         
+PWM_DFF2.Q_RNIGUU86               SB_LUT4      O        Out     0.287     6.017       -         
+DUTY_CYCLE014_i                   Net          -        -       1.371     -           10        
+un1_DUTY_CYCLE0_2_cry_4_c_RNO     SB_LUT4      I1       In      -         7.388       -         
+un1_DUTY_CYCLE0_2_cry_4_c_RNO     SB_LUT4      O        Out     0.400     7.788       -         
+un1_DUTY_CYCLE0_2_cry_4_c_RNO     Net          -        -       0.905     -           1         
+un1_DUTY_CYCLE0_2_cry_4_c         SB_CARRY     I0       In      -         8.693       -         
+un1_DUTY_CYCLE0_2_cry_4_c         SB_CARRY     CO       Out     0.258     8.950       -         
+un1_DUTY_CYCLE0_2_cry_4           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_5_c         SB_CARRY     CI       In      -         8.964       -         
+un1_DUTY_CYCLE0_2_cry_5_c         SB_CARRY     CO       Out     0.126     9.090       -         
+un1_DUTY_CYCLE0_2_cry_5           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_6_c         SB_CARRY     CI       In      -         9.104       -         
+un1_DUTY_CYCLE0_2_cry_6_c         SB_CARRY     CO       Out     0.126     9.231       -         
+un1_DUTY_CYCLE0_2_cry_6           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_7_0_c       SB_CARRY     CI       In      -         9.245       -         
+un1_DUTY_CYCLE0_2_cry_7_0_c       SB_CARRY     CO       Out     0.126     9.371       -         
+un1_DUTY_CYCLE0_2_cry_7           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_8_c         SB_CARRY     CI       In      -         9.385       -         
+un1_DUTY_CYCLE0_2_cry_8_c         SB_CARRY     CO       Out     0.126     9.511       -         
+un1_DUTY_CYCLE0_2_cry_8           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_9_c         SB_CARRY     CI       In      -         9.525       -         
+un1_DUTY_CYCLE0_2_cry_9_c         SB_CARRY     CO       Out     0.126     9.651       -         
+un1_DUTY_CYCLE0_2_cry_9           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_10_c        SB_CARRY     CI       In      -         9.665       -         
+un1_DUTY_CYCLE0_2_cry_10_c        SB_CARRY     CO       Out     0.126     9.791       -         
+un1_DUTY_CYCLE0_2_cry_10          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_11_0_c      SB_CARRY     CI       In      -         9.805       -         
+un1_DUTY_CYCLE0_2_cry_11_0_c      SB_CARRY     CO       Out     0.126     9.932       -         
+un1_DUTY_CYCLE0_2_cry_11          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_12_c        SB_CARRY     CI       In      -         9.946       -         
+un1_DUTY_CYCLE0_2_cry_12_c        SB_CARRY     CO       Out     0.126     10.072      -         
+un1_DUTY_CYCLE0_2_cry_12          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_13_0_c      SB_CARRY     CI       In      -         10.086      -         
+un1_DUTY_CYCLE0_2_cry_13_0_c      SB_CARRY     CO       Out     0.126     10.212      -         
+un1_DUTY_CYCLE0_2_cry_13          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_14_0_c      SB_CARRY     CI       In      -         10.226      -         
+un1_DUTY_CYCLE0_2_cry_14_0_c      SB_CARRY     CO       Out     0.126     10.352      -         
+un1_DUTY_CYCLE0_2_cry_14          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_15_0_c      SB_CARRY     CI       In      -         10.366      -         
+un1_DUTY_CYCLE0_2_cry_15_0_c      SB_CARRY     CO       Out     0.126     10.492      -         
+un1_DUTY_CYCLE0_2_cry_15          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_16_0_c      SB_CARRY     CI       In      -         10.506      -         
+un1_DUTY_CYCLE0_2_cry_16_0_c      SB_CARRY     CO       Out     0.126     10.633      -         
+un1_DUTY_CYCLE0_2_cry_16          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_17_0_c      SB_CARRY     CI       In      -         10.647      -         
+un1_DUTY_CYCLE0_2_cry_17_0_c      SB_CARRY     CO       Out     0.126     10.773      -         
+un1_DUTY_CYCLE0_2_cry_17          Net          -        -       0.386     -           1         
+DUTY_CYCLE0_RNO[18]               SB_LUT4      I3       In      -         11.159      -         
+DUTY_CYCLE0_RNO[18]               SB_LUT4      O        Out     0.316     11.474      -         
+DUTY_CYCLE0_RNO[18]               Net          -        -       1.507     -           1         
+DUTY_CYCLE0[18]                   SB_DFF       D        In      -         12.981      -         
+================================================================================================
+Total path delay (propagation time + setup) of 13.087 is 4.395(33.6%) logic and 8.692(66.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      11.165
+    - Setup time:                            0.105
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         11.060
+
+    - Propagation time:                      12.981
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.921
+
+    Number of logic level(s):                19
+    Starting point:                          DUTY_CYCLE0[16] / Q
+    Ending point:                            DUTY_CYCLE0[18] / D
+    The start point is clocked by            PWM_Generator_Verilog|clk [rising] on pin C
+    The end   point is clocked by            PWM_Generator_Verilog|clk [rising] on pin C
+
+Instance / Net                                 Pin      Pin               Arrival     No. of    
+Name                              Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------
+DUTY_CYCLE0[16]                   SB_DFF       Q        Out     0.540     0.540       -         
+PWM_OUT0_16                       Net          -        -       1.599     -           6         
+DUTY_CYCLE0_RNIFOK01[18]          SB_LUT4      I0       In      -         2.139       -         
+DUTY_CYCLE0_RNIFOK01[18]          SB_LUT4      O        Out     0.449     2.588       -         
+DUTY_CYCLE014_5                   Net          -        -       1.371     -           2         
+DUTY_CYCLE0_RNI76O95[10]          SB_LUT4      I0       In      -         3.959       -         
+DUTY_CYCLE0_RNI76O95[10]          SB_LUT4      O        Out     0.449     4.408       -         
+un1_DUTY_CYCLE0                   Net          -        -       1.371     -           1         
+PWM_DFF4.Q_RNIUV3T5               SB_LUT4      I3       In      -         5.779       -         
+PWM_DFF4.Q_RNIUV3T5               SB_LUT4      O        Out     0.287     6.066       -         
+un2_duty_dec0                     Net          -        -       1.371     -           10        
+un1_DUTY_CYCLE0_2_cry_4_c_RNO     SB_LUT4      I2       In      -         7.437       -         
+un1_DUTY_CYCLE0_2_cry_4_c_RNO     SB_LUT4      O        Out     0.351     7.788       -         
+un1_DUTY_CYCLE0_2_cry_4_c_RNO     Net          -        -       0.905     -           1         
+un1_DUTY_CYCLE0_2_cry_4_c         SB_CARRY     I0       In      -         8.693       -         
+un1_DUTY_CYCLE0_2_cry_4_c         SB_CARRY     CO       Out     0.258     8.950       -         
+un1_DUTY_CYCLE0_2_cry_4           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_5_c         SB_CARRY     CI       In      -         8.964       -         
+un1_DUTY_CYCLE0_2_cry_5_c         SB_CARRY     CO       Out     0.126     9.090       -         
+un1_DUTY_CYCLE0_2_cry_5           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_6_c         SB_CARRY     CI       In      -         9.104       -         
+un1_DUTY_CYCLE0_2_cry_6_c         SB_CARRY     CO       Out     0.126     9.231       -         
+un1_DUTY_CYCLE0_2_cry_6           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_7_0_c       SB_CARRY     CI       In      -         9.245       -         
+un1_DUTY_CYCLE0_2_cry_7_0_c       SB_CARRY     CO       Out     0.126     9.371       -         
+un1_DUTY_CYCLE0_2_cry_7           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_8_c         SB_CARRY     CI       In      -         9.385       -         
+un1_DUTY_CYCLE0_2_cry_8_c         SB_CARRY     CO       Out     0.126     9.511       -         
+un1_DUTY_CYCLE0_2_cry_8           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_9_c         SB_CARRY     CI       In      -         9.525       -         
+un1_DUTY_CYCLE0_2_cry_9_c         SB_CARRY     CO       Out     0.126     9.651       -         
+un1_DUTY_CYCLE0_2_cry_9           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_10_c        SB_CARRY     CI       In      -         9.665       -         
+un1_DUTY_CYCLE0_2_cry_10_c        SB_CARRY     CO       Out     0.126     9.791       -         
+un1_DUTY_CYCLE0_2_cry_10          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_11_0_c      SB_CARRY     CI       In      -         9.805       -         
+un1_DUTY_CYCLE0_2_cry_11_0_c      SB_CARRY     CO       Out     0.126     9.932       -         
+un1_DUTY_CYCLE0_2_cry_11          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_12_c        SB_CARRY     CI       In      -         9.946       -         
+un1_DUTY_CYCLE0_2_cry_12_c        SB_CARRY     CO       Out     0.126     10.072      -         
+un1_DUTY_CYCLE0_2_cry_12          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_13_0_c      SB_CARRY     CI       In      -         10.086      -         
+un1_DUTY_CYCLE0_2_cry_13_0_c      SB_CARRY     CO       Out     0.126     10.212      -         
+un1_DUTY_CYCLE0_2_cry_13          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_14_0_c      SB_CARRY     CI       In      -         10.226      -         
+un1_DUTY_CYCLE0_2_cry_14_0_c      SB_CARRY     CO       Out     0.126     10.352      -         
+un1_DUTY_CYCLE0_2_cry_14          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_15_0_c      SB_CARRY     CI       In      -         10.366      -         
+un1_DUTY_CYCLE0_2_cry_15_0_c      SB_CARRY     CO       Out     0.126     10.492      -         
+un1_DUTY_CYCLE0_2_cry_15          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_16_0_c      SB_CARRY     CI       In      -         10.506      -         
+un1_DUTY_CYCLE0_2_cry_16_0_c      SB_CARRY     CO       Out     0.126     10.633      -         
+un1_DUTY_CYCLE0_2_cry_16          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_17_0_c      SB_CARRY     CI       In      -         10.647      -         
+un1_DUTY_CYCLE0_2_cry_17_0_c      SB_CARRY     CO       Out     0.126     10.773      -         
+un1_DUTY_CYCLE0_2_cry_17          Net          -        -       0.386     -           1         
+DUTY_CYCLE0_RNO[18]               SB_LUT4      I3       In      -         11.159      -         
+DUTY_CYCLE0_RNO[18]               SB_LUT4      O        Out     0.316     11.474      -         
+DUTY_CYCLE0_RNO[18]               Net          -        -       1.507     -           1         
+DUTY_CYCLE0[18]                   SB_DFF       D        In      -         12.981      -         
+================================================================================================
+Total path delay (propagation time + setup) of 13.087 is 4.395(33.6%) logic and 8.692(66.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      11.165
+    - Setup time:                            0.105
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         11.060
+
+    - Propagation time:                      12.960
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.900
+
+    Number of logic level(s):                19
+    Starting point:                          DUTY_CYCLE0[4] / Q
+    Ending point:                            DUTY_CYCLE0[18] / D
+    The start point is clocked by            PWM_Generator_Verilog|clk [rising] on pin C
+    The end   point is clocked by            PWM_Generator_Verilog|clk [rising] on pin C
+
+Instance / Net                                 Pin      Pin               Arrival     No. of    
+Name                              Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------
+DUTY_CYCLE0[4]                    SB_DFF       Q        Out     0.540     0.540       -         
+PWM_OUT0_4                        Net          -        -       1.599     -           7         
+DUTY_CYCLE0_RNICESF1[4]           SB_LUT4      I0       In      -         2.139       -         
+DUTY_CYCLE0_RNICESF1[4]           SB_LUT4      O        Out     0.449     2.588       -         
+DUTY_CYCLE0_RNICESF1[4]           Net          -        -       1.371     -           2         
+DUTY_CYCLE0_RNI85EK3_0[11]        SB_LUT4      I2       In      -         3.959       -         
+DUTY_CYCLE0_RNI85EK3_0[11]        SB_LUT4      O        Out     0.379     4.338       -         
+un7lt15_0_0                       Net          -        -       1.371     -           1         
+PWM_DFF2.Q_RNIGUU86               SB_LUT4      I3       In      -         5.708       -         
+PWM_DFF2.Q_RNIGUU86               SB_LUT4      O        Out     0.287     5.996       -         
+DUTY_CYCLE014_i                   Net          -        -       1.371     -           10        
+un1_DUTY_CYCLE0_2_cry_4_c_RNO     SB_LUT4      I1       In      -         7.367       -         
+un1_DUTY_CYCLE0_2_cry_4_c_RNO     SB_LUT4      O        Out     0.400     7.767       -         
+un1_DUTY_CYCLE0_2_cry_4_c_RNO     Net          -        -       0.905     -           1         
+un1_DUTY_CYCLE0_2_cry_4_c         SB_CARRY     I0       In      -         8.672       -         
+un1_DUTY_CYCLE0_2_cry_4_c         SB_CARRY     CO       Out     0.258     8.929       -         
+un1_DUTY_CYCLE0_2_cry_4           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_5_c         SB_CARRY     CI       In      -         8.943       -         
+un1_DUTY_CYCLE0_2_cry_5_c         SB_CARRY     CO       Out     0.126     9.069       -         
+un1_DUTY_CYCLE0_2_cry_5           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_6_c         SB_CARRY     CI       In      -         9.083       -         
+un1_DUTY_CYCLE0_2_cry_6_c         SB_CARRY     CO       Out     0.126     9.210       -         
+un1_DUTY_CYCLE0_2_cry_6           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_7_0_c       SB_CARRY     CI       In      -         9.224       -         
+un1_DUTY_CYCLE0_2_cry_7_0_c       SB_CARRY     CO       Out     0.126     9.350       -         
+un1_DUTY_CYCLE0_2_cry_7           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_8_c         SB_CARRY     CI       In      -         9.364       -         
+un1_DUTY_CYCLE0_2_cry_8_c         SB_CARRY     CO       Out     0.126     9.490       -         
+un1_DUTY_CYCLE0_2_cry_8           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_9_c         SB_CARRY     CI       In      -         9.504       -         
+un1_DUTY_CYCLE0_2_cry_9_c         SB_CARRY     CO       Out     0.126     9.630       -         
+un1_DUTY_CYCLE0_2_cry_9           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_10_c        SB_CARRY     CI       In      -         9.644       -         
+un1_DUTY_CYCLE0_2_cry_10_c        SB_CARRY     CO       Out     0.126     9.770       -         
+un1_DUTY_CYCLE0_2_cry_10          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_11_0_c      SB_CARRY     CI       In      -         9.784       -         
+un1_DUTY_CYCLE0_2_cry_11_0_c      SB_CARRY     CO       Out     0.126     9.911       -         
+un1_DUTY_CYCLE0_2_cry_11          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_12_c        SB_CARRY     CI       In      -         9.925       -         
+un1_DUTY_CYCLE0_2_cry_12_c        SB_CARRY     CO       Out     0.126     10.051      -         
+un1_DUTY_CYCLE0_2_cry_12          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_13_0_c      SB_CARRY     CI       In      -         10.065      -         
+un1_DUTY_CYCLE0_2_cry_13_0_c      SB_CARRY     CO       Out     0.126     10.191      -         
+un1_DUTY_CYCLE0_2_cry_13          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_14_0_c      SB_CARRY     CI       In      -         10.205      -         
+un1_DUTY_CYCLE0_2_cry_14_0_c      SB_CARRY     CO       Out     0.126     10.331      -         
+un1_DUTY_CYCLE0_2_cry_14          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_15_0_c      SB_CARRY     CI       In      -         10.345      -         
+un1_DUTY_CYCLE0_2_cry_15_0_c      SB_CARRY     CO       Out     0.126     10.471      -         
+un1_DUTY_CYCLE0_2_cry_15          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_16_0_c      SB_CARRY     CI       In      -         10.485      -         
+un1_DUTY_CYCLE0_2_cry_16_0_c      SB_CARRY     CO       Out     0.126     10.612      -         
+un1_DUTY_CYCLE0_2_cry_16          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_17_0_c      SB_CARRY     CI       In      -         10.626      -         
+un1_DUTY_CYCLE0_2_cry_17_0_c      SB_CARRY     CO       Out     0.126     10.752      -         
+un1_DUTY_CYCLE0_2_cry_17          Net          -        -       0.386     -           1         
+DUTY_CYCLE0_RNO[18]               SB_LUT4      I3       In      -         11.138      -         
+DUTY_CYCLE0_RNO[18]               SB_LUT4      O        Out     0.316     11.453      -         
+DUTY_CYCLE0_RNO[18]               Net          -        -       1.507     -           1         
+DUTY_CYCLE0[18]                   SB_DFF       D        In      -         12.960      -         
+================================================================================================
+Total path delay (propagation time + setup) of 13.066 is 4.374(33.5%) logic and 8.692(66.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      11.165
+    - Setup time:                            0.105
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         11.060
+
+    - Propagation time:                      12.960
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.900
+
+    Number of logic level(s):                19
+    Starting point:                          DUTY_CYCLE0[9] / Q
+    Ending point:                            DUTY_CYCLE0[18] / D
+    The start point is clocked by            PWM_Generator_Verilog|clk [rising] on pin C
+    The end   point is clocked by            PWM_Generator_Verilog|clk [rising] on pin C
+
+Instance / Net                                 Pin      Pin               Arrival     No. of    
+Name                              Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------
+DUTY_CYCLE0[9]                    SB_DFF       Q        Out     0.540     0.540       -         
+un7lto9                           Net          -        -       1.599     -           8         
+DUTY_CYCLE0_RNITHPE1[7]           SB_LUT4      I2       In      -         2.139       -         
+DUTY_CYCLE0_RNITHPE1[7]           SB_LUT4      O        Out     0.379     2.518       -         
+un7lto10_0                        Net          -        -       1.371     -           2         
+DUTY_CYCLE0_RNI85EK3_0[11]        SB_LUT4      I0       In      -         3.889       -         
+DUTY_CYCLE0_RNI85EK3_0[11]        SB_LUT4      O        Out     0.449     4.338       -         
+un7lt15_0_0                       Net          -        -       1.371     -           1         
+PWM_DFF2.Q_RNIGUU86               SB_LUT4      I3       In      -         5.708       -         
+PWM_DFF2.Q_RNIGUU86               SB_LUT4      O        Out     0.287     5.996       -         
+DUTY_CYCLE014_i                   Net          -        -       1.371     -           10        
+un1_DUTY_CYCLE0_2_cry_4_c_RNO     SB_LUT4      I1       In      -         7.367       -         
+un1_DUTY_CYCLE0_2_cry_4_c_RNO     SB_LUT4      O        Out     0.400     7.767       -         
+un1_DUTY_CYCLE0_2_cry_4_c_RNO     Net          -        -       0.905     -           1         
+un1_DUTY_CYCLE0_2_cry_4_c         SB_CARRY     I0       In      -         8.672       -         
+un1_DUTY_CYCLE0_2_cry_4_c         SB_CARRY     CO       Out     0.258     8.929       -         
+un1_DUTY_CYCLE0_2_cry_4           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_5_c         SB_CARRY     CI       In      -         8.943       -         
+un1_DUTY_CYCLE0_2_cry_5_c         SB_CARRY     CO       Out     0.126     9.069       -         
+un1_DUTY_CYCLE0_2_cry_5           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_6_c         SB_CARRY     CI       In      -         9.083       -         
+un1_DUTY_CYCLE0_2_cry_6_c         SB_CARRY     CO       Out     0.126     9.210       -         
+un1_DUTY_CYCLE0_2_cry_6           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_7_0_c       SB_CARRY     CI       In      -         9.224       -         
+un1_DUTY_CYCLE0_2_cry_7_0_c       SB_CARRY     CO       Out     0.126     9.350       -         
+un1_DUTY_CYCLE0_2_cry_7           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_8_c         SB_CARRY     CI       In      -         9.364       -         
+un1_DUTY_CYCLE0_2_cry_8_c         SB_CARRY     CO       Out     0.126     9.490       -         
+un1_DUTY_CYCLE0_2_cry_8           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_9_c         SB_CARRY     CI       In      -         9.504       -         
+un1_DUTY_CYCLE0_2_cry_9_c         SB_CARRY     CO       Out     0.126     9.630       -         
+un1_DUTY_CYCLE0_2_cry_9           Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_10_c        SB_CARRY     CI       In      -         9.644       -         
+un1_DUTY_CYCLE0_2_cry_10_c        SB_CARRY     CO       Out     0.126     9.770       -         
+un1_DUTY_CYCLE0_2_cry_10          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_11_0_c      SB_CARRY     CI       In      -         9.784       -         
+un1_DUTY_CYCLE0_2_cry_11_0_c      SB_CARRY     CO       Out     0.126     9.911       -         
+un1_DUTY_CYCLE0_2_cry_11          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_12_c        SB_CARRY     CI       In      -         9.925       -         
+un1_DUTY_CYCLE0_2_cry_12_c        SB_CARRY     CO       Out     0.126     10.051      -         
+un1_DUTY_CYCLE0_2_cry_12          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_13_0_c      SB_CARRY     CI       In      -         10.065      -         
+un1_DUTY_CYCLE0_2_cry_13_0_c      SB_CARRY     CO       Out     0.126     10.191      -         
+un1_DUTY_CYCLE0_2_cry_13          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_14_0_c      SB_CARRY     CI       In      -         10.205      -         
+un1_DUTY_CYCLE0_2_cry_14_0_c      SB_CARRY     CO       Out     0.126     10.331      -         
+un1_DUTY_CYCLE0_2_cry_14          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_15_0_c      SB_CARRY     CI       In      -         10.345      -         
+un1_DUTY_CYCLE0_2_cry_15_0_c      SB_CARRY     CO       Out     0.126     10.471      -         
+un1_DUTY_CYCLE0_2_cry_15          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_16_0_c      SB_CARRY     CI       In      -         10.485      -         
+un1_DUTY_CYCLE0_2_cry_16_0_c      SB_CARRY     CO       Out     0.126     10.612      -         
+un1_DUTY_CYCLE0_2_cry_16          Net          -        -       0.014     -           2         
+un1_DUTY_CYCLE0_2_cry_17_0_c      SB_CARRY     CI       In      -         10.626      -         
+un1_DUTY_CYCLE0_2_cry_17_0_c      SB_CARRY     CO       Out     0.126     10.752      -         
+un1_DUTY_CYCLE0_2_cry_17          Net          -        -       0.386     -           1         
+DUTY_CYCLE0_RNO[18]               SB_LUT4      I3       In      -         11.138      -         
+DUTY_CYCLE0_RNO[18]               SB_LUT4      O        Out     0.316     11.453      -         
+DUTY_CYCLE0_RNO[18]               Net          -        -       1.507     -           1         
+DUTY_CYCLE0[18]                   SB_DFF       D        In      -         12.960      -         
+================================================================================================
+Total path delay (propagation time + setup) of 13.066 is 4.374(33.5%) logic and 8.692(66.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+---------------------------------------
+Resource Usage Report for PWM_Generator_Verilog 
+
+Mapping to part: ice40hx1ktq144
+Cell usage:
+GND             8 uses
+SB_CARRY        86 uses
+SB_DFF          46 uses
+SB_DFFE         8 uses
+SB_DFFSR        18 uses
+SB_GB           1 use
+VCC             8 uses
+SB_LUT4         152 uses
+
+I/O ports: 7
+I/O primitives: 7
+SB_GB_IO       1 use
+SB_IO          6 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   72 (5%)
+Total load per clock:
+   PWM_Generator_Verilog|clk: 1
+
+@S |Mapping Summary:
+Total  LUTs: 152 (11%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed Luts 152 = 152 
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 135MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Nov 26 20:44:57 2023
+
+###########################################################]

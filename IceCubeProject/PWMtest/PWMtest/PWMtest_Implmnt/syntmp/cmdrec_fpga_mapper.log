@@ -1,0 +1,14 @@
+D:\IceCube2\synpbase\bin64\m_generic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt   -part iCE40HX1K  -package TQ144    -maxfan 10000 -RWCheckOnRam 0 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -summaryfile D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\synlog\report\PWMtest_fpga_mapper.xml  -flow mapping  -multisrs  -oedif  D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\PWMtest.edf   -autoconstraint  -freq 1.000   D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\synwork\PWMtest_prem.srd  -sap  D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\PWMtest.sap  -otap  D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\PWMtest.tap  -omap  D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\PWMtest.map  -devicelib  D:\IceCube2\synpbase\lib\generic\sb_ice40.v  -sap  D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\PWMtest.sap  -ologparam  D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\syntmp\PWMtest.plg  -osyn  D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\PWMtest.srm  -prjdir  D:\IceCube2\verilog\Projects\PWMtest\  -prjname  PWMtest_syn  -log  D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\synlog\PWMtest_fpga_mapper.srr 
+rc:1 success:1 runtime:1
+file:D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\PWMtest.edf|io:o|time:1701056697|size:170265|exec:0
+file:D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\synwork\PWMtest_prem.srd|io:i|time:1701056696|size:5953|exec:0
+file:D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\PWMtest.sap|io:o|time:1701056696|size:844|exec:0
+file:D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\PWMtest.tap|io:o|time:0|size:0|exec:0
+file:D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\PWMtest.map|io:o|time:1701056697|size:28|exec:0
+file:D:\IceCube2\synpbase\lib\generic\sb_ice40.v|io:i|time:1699205935|size:224837|exec:0
+file:D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\PWMtest.sap|io:o|time:1701056696|size:844|exec:0
+file:D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\syntmp\PWMtest.plg|io:o|time:1701056697|size:609|exec:0
+file:D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\PWMtest.srm|io:o|time:1701056697|size:31410|exec:0
+file:D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\synlog\PWMtest_fpga_mapper.srr|io:o|time:1701056697|size:52022|exec:0
+file:D:\IceCube2\synpbase\bin\m_generic.exe|io:i|time:1699205932|size:17853440|exec:1
+file:D:\IceCube2\synpbase\bin64\m_generic.exe|io:i|time:1699205933|size:32355840|exec:1

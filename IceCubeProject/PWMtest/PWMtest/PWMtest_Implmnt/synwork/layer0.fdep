@@ -1,0 +1,18 @@
+#OPTIONS:"|-layerid|0|-orig_srs|D:\\IceCube2\\verilog\\Projects\\PWMtest\\PWMtest_Implmnt\\synwork\\PWMtest_comp.srs|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-nostructver|-I|D:\\IceCube2\\verilog\\Projects\\PWMtest\\|-I|D:\\IceCube2\\synpbase\\lib|-v2001|-devicelib|D:\\IceCube2\\synpbase\\lib\\generic\\sb_ice40.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work"
+#CUR:"D:\\IceCube2\\synpbase\\bin64\\c_ver.exe":1699205933
+#CUR:"D:\\IceCube2\\synpbase\\lib\\generic\\sb_ice40.v":1699205935
+#CUR:"D:\\IceCube2\\synpbase\\lib\\vlog\\hypermods.v":1699205937
+#CUR:"D:\\IceCube2\\synpbase\\lib\\vlog\\umr_capim.v":1699205937
+#CUR:"D:\\IceCube2\\synpbase\\lib\\vlog\\scemi_objects.v":1699205937
+#CUR:"D:\\IceCube2\\synpbase\\lib\\vlog\\scemi_pipes.svh":1699205937
+#CUR:"D:\\EGR401\\CODE_WIP\\ESC_PWM.v":1701056690
+#numinternalfiles:5
+#defaultlanguage:verilog
+0			"D:\EGR401\CODE_WIP\ESC_PWM.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+#Dependency Lists(Users Of)
+0 -1
+#Design Unit to File Association
+module work DFF_PWM 0
+module work PWM_Generator_Verilog 0

@@ -1,0 +1,7 @@
+INPUT  increase_duty0 	 location (8, 0, 1) 	 60 	 
+INPUT  decrease_duty1 	 location (4, 0, 1) 	 45 	 
+OUTPUT PWM_OUT1 	 location (5, 0, 0) 	 47 	 
+INPUT  increase_duty1 	 location (4, 0, 0) 	 44 	 
+INPUT  decrease_duty0 	 location (9, 0, 0) 	 61 	 
+INPUT  clk 	 location (0, 8, 1) 	 21 	 
+OUTPUT PWM_OUT0 	 location (9, 0, 1) 	 62 	 

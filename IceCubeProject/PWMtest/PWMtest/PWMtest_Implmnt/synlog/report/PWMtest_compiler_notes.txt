@@ -1,0 +1,36 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"D:\EGR401\CODE_WIP\ESC_PWM.v":132:7:132:13|Synthesizing module DFF_PWM in library work.
+@N: CG364 :"D:\EGR401\CODE_WIP\ESC_PWM.v":1:7:1:27|Synthesizing module PWM_Generator_Verilog in library work.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[1] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[2] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[3] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[4] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[5] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[6] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[7] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[8] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[9] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[10] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[11] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[12] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[13] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[14] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[15] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[16] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[17] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[18] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[19] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[20] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[21] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[22] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[23] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[24] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[25] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[26] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":45:1:45:6|Register bit counter_debounce[27] is always 0.
+@N: CL189 :"D:\EGR401\CODE_WIP\ESC_PWM.v":103:1:103:6|Register bit counter_PWM0[18] is always 0.
+@N|Running in 64-bit mode
+@N: NF107 :"D:\EGR401\CODE_WIP\ESC_PWM.v":1:7:1:27|Selected library: work cell: PWM_Generator_Verilog view verilog as top level
+@N: NF107 :"D:\EGR401\CODE_WIP\ESC_PWM.v":1:7:1:27|Selected library: work cell: PWM_Generator_Verilog view verilog as top level
+

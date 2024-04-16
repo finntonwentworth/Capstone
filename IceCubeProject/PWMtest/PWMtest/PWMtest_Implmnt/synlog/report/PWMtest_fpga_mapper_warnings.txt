@@ -1,0 +1,6 @@
+@W: FX1039 :"d:\egr401\code_wip\esc_pwm.v":113:1:113:6|User-specified initial value defined for instance DUTY_CYCLE1[16:0] is being ignored. 
+@W: FX1039 :"d:\egr401\code_wip\esc_pwm.v":95:1:95:6|User-specified initial value defined for instance DUTY_CYCLE0[18:0] is being ignored. 
+@W: FX1039 :"d:\egr401\code_wip\esc_pwm.v":121:1:121:6|User-specified initial value defined for instance counter_PWM1[16:0] is being ignored. 
+@W: FX1039 :"d:\egr401\code_wip\esc_pwm.v":103:1:103:6|User-specified initial value defined for instance counter_PWM0[17:0] is being ignored. 
+@W: FX1039 :"d:\egr401\code_wip\esc_pwm.v":45:1:45:6|User-specified initial value defined for instance counter_debounce[0] is being ignored. 
+@W: MT420 |Found inferred clock PWM_Generator_Verilog|clk with period 11.17ns. Please declare a user-defined clock on object "p:clk"

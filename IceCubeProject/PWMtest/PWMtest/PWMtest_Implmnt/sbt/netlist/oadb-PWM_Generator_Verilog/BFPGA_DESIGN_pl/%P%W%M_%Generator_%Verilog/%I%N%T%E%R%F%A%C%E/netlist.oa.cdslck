@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      nerdk
+HostName                       DESKTOP-SVJSVPL
+ProcessIdentifier              4828
+ProcessCreationTime_UTC        0
+ProcessCreationTime_Readable   12/31/69 17:00:00 US Mountain Standard Time
+AppIdentifier                  OA File System Design Manager
+OSType                         win32
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\sbt\netlist\oadb-PWM_Generator_Verilog\BFPGA_DESIGN_pl\%P%W%M_%Generator_%Verilog\%I%N%T%E%R%F%A%C%E\netlist.oa.cdslck
+TimeEditLocked                 04/15/24 20:26:01 US Mountain Standard Time

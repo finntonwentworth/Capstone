@@ -1,0 +1,237 @@
+ble_pack counter_PWM1_0_LC_1_1_0 { counter_PWM1_RNO[0], counter_PWM1[0], counter_PWM1_cry_c[0] }
+ble_pack counter_PWM1_1_LC_1_1_1 { counter_PWM1_RNO[1], counter_PWM1[1], counter_PWM1_cry_c[1] }
+ble_pack counter_PWM1_2_LC_1_1_2 { counter_PWM1_RNO[2], counter_PWM1[2], counter_PWM1_cry_c[2] }
+ble_pack counter_PWM1_3_LC_1_1_3 { counter_PWM1_RNO[3], counter_PWM1[3], counter_PWM1_cry_c[3] }
+ble_pack counter_PWM1_4_LC_1_1_4 { counter_PWM1_RNO[4], counter_PWM1[4], counter_PWM1_cry_c[4] }
+ble_pack counter_PWM1_5_LC_1_1_5 { counter_PWM1_RNO[5], counter_PWM1[5], counter_PWM1_cry_c[5] }
+ble_pack counter_PWM1_6_LC_1_1_6 { counter_PWM1_RNO[6], counter_PWM1[6], counter_PWM1_cry_c[6] }
+ble_pack counter_PWM1_7_LC_1_1_7 { counter_PWM1_RNO[7], counter_PWM1[7], counter_PWM1_cry_c[7] }
+clb_pack LT_1_1 { counter_PWM1_0_LC_1_1_0, counter_PWM1_1_LC_1_1_1, counter_PWM1_2_LC_1_1_2, counter_PWM1_3_LC_1_1_3, counter_PWM1_4_LC_1_1_4, counter_PWM1_5_LC_1_1_5, counter_PWM1_6_LC_1_1_6, counter_PWM1_7_LC_1_1_7 }
+set_location LT_1_1 1 1
+ble_pack counter_PWM1_8_LC_1_2_0 { counter_PWM1_RNO[8], counter_PWM1[8], counter_PWM1_cry_c[8] }
+ble_pack counter_PWM1_9_LC_1_2_1 { counter_PWM1_RNO[9], counter_PWM1[9], counter_PWM1_cry_c[9] }
+ble_pack counter_PWM1_10_LC_1_2_2 { counter_PWM1_RNO[10], counter_PWM1[10], counter_PWM1_cry_c[10] }
+ble_pack counter_PWM1_11_LC_1_2_3 { counter_PWM1_RNO[11], counter_PWM1[11], counter_PWM1_cry_c[11] }
+ble_pack counter_PWM1_12_LC_1_2_4 { counter_PWM1_RNO[12], counter_PWM1[12], counter_PWM1_cry_c[12] }
+ble_pack counter_PWM1_13_LC_1_2_5 { counter_PWM1_RNO[13], counter_PWM1[13], counter_PWM1_cry_c[13] }
+ble_pack counter_PWM1_14_LC_1_2_6 { counter_PWM1_RNO[14], counter_PWM1[14], counter_PWM1_cry_c[14] }
+ble_pack counter_PWM1_15_LC_1_2_7 { counter_PWM1_RNO[15], counter_PWM1[15], counter_PWM1_cry_c[15] }
+clb_pack LT_1_2 { counter_PWM1_8_LC_1_2_0, counter_PWM1_9_LC_1_2_1, counter_PWM1_10_LC_1_2_2, counter_PWM1_11_LC_1_2_3, counter_PWM1_12_LC_1_2_4, counter_PWM1_13_LC_1_2_5, counter_PWM1_14_LC_1_2_6, counter_PWM1_15_LC_1_2_7 }
+set_location LT_1_2 1 2
+ble_pack counter_PWM1_16_LC_1_3_0 { counter_PWM1_RNO[16], counter_PWM1[16] }
+clb_pack LT_1_3 { counter_PWM1_16_LC_1_3_0 }
+set_location LT_1_3 1 3
+ble_pack counter_PWM0_1_LC_1_6_4 { counter_PWM0_RNO[1], counter_PWM0[1] }
+ble_pack counter_PWM0_0_LC_1_6_6 { counter_PWM0_RNO[0], counter_PWM0[0] }
+clb_pack LT_1_6 { counter_PWM0_1_LC_1_6_4, counter_PWM0_0_LC_1_6_6 }
+set_location LT_1_6 1 6
+ble_pack counter_PWM0_1_cry_1_c_LC_1_7_0 { counter_PWM0_1_cry_1_c }
+ble_pack counter_PWM0_2_LC_1_7_1 { counter_PWM0_RNO[2], counter_PWM0[2], counter_PWM0_1_cry_2_c }
+ble_pack counter_PWM0_3_LC_1_7_2 { counter_PWM0_RNO[3], counter_PWM0[3], counter_PWM0_1_cry_3_c }
+ble_pack counter_PWM0_4_LC_1_7_3 { counter_PWM0_RNO[4], counter_PWM0[4], counter_PWM0_1_cry_4_c }
+ble_pack counter_PWM0_5_LC_1_7_4 { counter_PWM0_RNO[5], counter_PWM0[5], counter_PWM0_1_cry_5_c }
+ble_pack counter_PWM0_6_LC_1_7_5 { counter_PWM0_RNO[6], counter_PWM0[6], counter_PWM0_1_cry_6_c }
+ble_pack counter_PWM0_7_LC_1_7_6 { counter_PWM0_RNO[7], counter_PWM0[7], counter_PWM0_1_cry_7_c }
+ble_pack counter_PWM0_8_LC_1_7_7 { counter_PWM0_RNO[8], counter_PWM0[8], counter_PWM0_1_cry_8_c }
+clb_pack LT_1_7 { counter_PWM0_1_cry_1_c_LC_1_7_0, counter_PWM0_2_LC_1_7_1, counter_PWM0_3_LC_1_7_2, counter_PWM0_4_LC_1_7_3, counter_PWM0_5_LC_1_7_4, counter_PWM0_6_LC_1_7_5, counter_PWM0_7_LC_1_7_6, counter_PWM0_8_LC_1_7_7 }
+set_location LT_1_7 1 7
+ble_pack counter_PWM0_9_LC_1_8_0 { counter_PWM0_RNO[9], counter_PWM0[9], counter_PWM0_1_cry_9_c }
+ble_pack counter_PWM0_10_LC_1_8_1 { counter_PWM0_RNO[10], counter_PWM0[10], counter_PWM0_1_cry_10_c }
+ble_pack counter_PWM0_11_LC_1_8_2 { counter_PWM0_RNO[11], counter_PWM0[11], counter_PWM0_1_cry_11_c }
+ble_pack counter_PWM0_12_LC_1_8_3 { counter_PWM0_RNO[12], counter_PWM0[12], counter_PWM0_1_cry_12_c }
+ble_pack counter_PWM0_13_LC_1_8_4 { counter_PWM0_RNO[13], counter_PWM0[13], counter_PWM0_1_cry_13_c }
+ble_pack counter_PWM0_14_LC_1_8_5 { counter_PWM0_RNO[14], counter_PWM0[14], counter_PWM0_1_cry_14_c }
+ble_pack counter_PWM0_15_LC_1_8_6 { counter_PWM0_RNO[15], counter_PWM0[15], counter_PWM0_1_cry_15_c }
+ble_pack counter_PWM0_16_LC_1_8_7 { counter_PWM0_RNO[16], counter_PWM0[16], counter_PWM0_1_cry_16_c }
+clb_pack LT_1_8 { counter_PWM0_9_LC_1_8_0, counter_PWM0_10_LC_1_8_1, counter_PWM0_11_LC_1_8_2, counter_PWM0_12_LC_1_8_3, counter_PWM0_13_LC_1_8_4, counter_PWM0_14_LC_1_8_5, counter_PWM0_15_LC_1_8_6, counter_PWM0_16_LC_1_8_7 }
+set_location LT_1_8 1 8
+ble_pack counter_PWM0_17_LC_1_9_0 { counter_PWM0_RNO[17], counter_PWM0[17] }
+clb_pack LT_1_9 { counter_PWM0_17_LC_1_9_0 }
+set_location LT_1_9 1 9
+ble_pack CONSTANT_ONE_LUT4_LC_1_10_0 { CONSTANT_ONE_LUT4 }
+clb_pack LT_1_10 { CONSTANT_ONE_LUT4_LC_1_10_0 }
+set_location LT_1_10 1 10
+ble_pack PWM_OUT1_cry_4_c_inv_LC_2_1_0 { PWM_OUT1_cry_4_c_inv, PWM_OUT1_cry_4_c }
+ble_pack PWM_OUT1_cry_5_c_inv_LC_2_1_1 { PWM_OUT1_cry_5_c_inv, PWM_OUT1_cry_5_c }
+ble_pack PWM_OUT1_cry_6_c_inv_LC_2_1_2 { PWM_OUT1_cry_6_c_inv, PWM_OUT1_cry_6_c }
+ble_pack PWM_OUT1_cry_7_c_inv_LC_2_1_3 { PWM_OUT1_cry_7_c_inv, PWM_OUT1_cry_7_c }
+ble_pack PWM_OUT1_cry_8_c_inv_LC_2_1_4 { PWM_OUT1_cry_8_c_inv, PWM_OUT1_cry_8_c }
+ble_pack PWM_OUT1_cry_9_c_inv_LC_2_1_5 { PWM_OUT1_cry_9_c_inv, PWM_OUT1_cry_9_c }
+ble_pack PWM_OUT1_cry_10_c_inv_LC_2_1_6 { PWM_OUT1_cry_10_c_inv, PWM_OUT1_cry_10_c }
+ble_pack PWM_OUT1_cry_11_c_inv_LC_2_1_7 { PWM_OUT1_cry_11_c_inv, PWM_OUT1_cry_11_c }
+clb_pack LT_2_1 { PWM_OUT1_cry_4_c_inv_LC_2_1_0, PWM_OUT1_cry_5_c_inv_LC_2_1_1, PWM_OUT1_cry_6_c_inv_LC_2_1_2, PWM_OUT1_cry_7_c_inv_LC_2_1_3, PWM_OUT1_cry_8_c_inv_LC_2_1_4, PWM_OUT1_cry_9_c_inv_LC_2_1_5, PWM_OUT1_cry_10_c_inv_LC_2_1_6, PWM_OUT1_cry_11_c_inv_LC_2_1_7 }
+set_location LT_2_1 2 1
+ble_pack PWM_OUT1_cry_12_c_inv_LC_2_2_0 { PWM_OUT1_cry_12_c_inv, PWM_OUT1_cry_12_c }
+ble_pack PWM_OUT1_cry_13_c_inv_LC_2_2_1 { PWM_OUT1_cry_13_c_inv, PWM_OUT1_cry_13_c }
+ble_pack PWM_OUT1_cry_14_c_inv_LC_2_2_2 { PWM_OUT1_cry_14_c_inv, PWM_OUT1_cry_14_c }
+ble_pack PWM_OUT1_cry_15_c_inv_LC_2_2_3 { PWM_OUT1_cry_15_c_inv, PWM_OUT1_cry_15_c }
+ble_pack PWM_OUT1_cry_16_c_inv_LC_2_2_4 { PWM_OUT1_cry_16_c_inv, PWM_OUT1_cry_16_c }
+ble_pack PWM_OUT1_c_THRU_LUT4_0_LC_2_2_5 { PWM_OUT1_c_THRU_LUT4_0 }
+clb_pack LT_2_2 { PWM_OUT1_cry_12_c_inv_LC_2_2_0, PWM_OUT1_cry_13_c_inv_LC_2_2_1, PWM_OUT1_cry_14_c_inv_LC_2_2_2, PWM_OUT1_cry_15_c_inv_LC_2_2_3, PWM_OUT1_cry_16_c_inv_LC_2_2_4, PWM_OUT1_c_THRU_LUT4_0_LC_2_2_5 }
+set_location LT_2_2 2 2
+ble_pack DUTY_CYCLE1_RNIVGQ39_5_LC_2_3_0 { DUTY_CYCLE1_RNIVGQ39[5] }
+ble_pack DUTY_CYCLE1_RNI0IQ39_6_LC_2_3_1 { DUTY_CYCLE1_RNI0IQ39[6] }
+ble_pack DUTY_CYCLE1_RNIMK6B1_9_LC_2_3_2 { DUTY_CYCLE1_RNIMK6B1[9] }
+ble_pack DUTY_CYCLE1_RNIBGQ59_10_LC_2_3_3 { DUTY_CYCLE1_RNIBGQ59[10] }
+ble_pack DUTY_CYCLE1_RNI2KQ39_8_LC_2_3_4 { DUTY_CYCLE1_RNI2KQ39[8] }
+ble_pack PWM_DFF8.Q_RNIKO92F_2_LC_2_3_5 { PWM_DFF8.Q_RNIKO92F_2 }
+ble_pack DUTY_CYCLE1_RNI3LQ39_9_LC_2_3_6 { DUTY_CYCLE1_RNI3LQ39[9] }
+clb_pack LT_2_3 { DUTY_CYCLE1_RNIVGQ39_5_LC_2_3_0, DUTY_CYCLE1_RNI0IQ39_6_LC_2_3_1, DUTY_CYCLE1_RNIMK6B1_9_LC_2_3_2, DUTY_CYCLE1_RNIBGQ59_10_LC_2_3_3, DUTY_CYCLE1_RNI2KQ39_8_LC_2_3_4, PWM_DFF8.Q_RNIKO92F_2_LC_2_3_5, DUTY_CYCLE1_RNI3LQ39_9_LC_2_3_6 }
+set_location LT_2_3 2 3
+ble_pack DUTY_CYCLE1_RNI9R6D1_13_LC_2_4_1 { DUTY_CYCLE1_RNI9R6D1[13] }
+ble_pack DUTY_CYCLE1_RNI3HOP4_8_LC_2_4_2 { DUTY_CYCLE1_RNI3HOP4[8] }
+ble_pack DUTY_CYCLE1_RNICBOM8_11_LC_2_4_3 { DUTY_CYCLE1_RNICBOM8[11] }
+ble_pack DUTY_CYCLE1_RNI9R6D1_0_13_LC_2_4_5 { DUTY_CYCLE1_RNI9R6D1_0[13] }
+ble_pack DUTY_CYCLE1_RNI9DDQ2_11_LC_2_4_6 { DUTY_CYCLE1_RNI9DDQ2[11] }
+ble_pack DUTY_CYCLE1_RNIDIQ59_12_LC_2_4_7 { DUTY_CYCLE1_RNIDIQ59[12] }
+clb_pack LT_2_4 { DUTY_CYCLE1_RNI9R6D1_13_LC_2_4_1, DUTY_CYCLE1_RNI3HOP4_8_LC_2_4_2, DUTY_CYCLE1_RNICBOM8_11_LC_2_4_3, DUTY_CYCLE1_RNI9R6D1_0_13_LC_2_4_5, DUTY_CYCLE1_RNI9DDQ2_11_LC_2_4_6, DUTY_CYCLE1_RNIDIQ59_12_LC_2_4_7 }
+set_location LT_2_4 2 4
+ble_pack counter_PWM0_RNI313J_15_LC_2_8_1 { counter_PWM0_RNI313J[15] }
+ble_pack counter_PWM0_RNILVAD_7_LC_2_8_5 { counter_PWM0_RNILVAD[7] }
+ble_pack counter_PWM0_RNIF6V91_11_LC_2_8_6 { counter_PWM0_RNIF6V91[11] }
+ble_pack counter_PWM0_RNIL85G2_17_LC_2_8_7 { counter_PWM0_RNIL85G2[17] }
+clb_pack LT_2_8 { counter_PWM0_RNI313J_15_LC_2_8_1, counter_PWM0_RNILVAD_7_LC_2_8_5, counter_PWM0_RNIF6V91_11_LC_2_8_6, counter_PWM0_RNIL85G2_17_LC_2_8_7 }
+set_location LT_2_8 2 8
+ble_pack PWM_OUT0_cry_4_c_inv_LC_2_9_0 { PWM_OUT0_cry_4_c_inv, PWM_OUT0_cry_4_c }
+ble_pack PWM_OUT0_cry_5_c_inv_LC_2_9_1 { PWM_OUT0_cry_5_c_inv, PWM_OUT0_cry_5_c }
+ble_pack PWM_OUT0_cry_6_c_inv_LC_2_9_2 { PWM_OUT0_cry_6_c_inv, PWM_OUT0_cry_6_c }
+ble_pack PWM_OUT0_cry_7_c_inv_LC_2_9_3 { PWM_OUT0_cry_7_c_inv, PWM_OUT0_cry_7_c }
+ble_pack PWM_OUT0_cry_8_c_inv_LC_2_9_4 { PWM_OUT0_cry_8_c_inv, PWM_OUT0_cry_8_c }
+ble_pack PWM_OUT0_cry_9_c_inv_LC_2_9_5 { PWM_OUT0_cry_9_c_inv, PWM_OUT0_cry_9_c }
+ble_pack PWM_OUT0_cry_10_c_inv_LC_2_9_6 { PWM_OUT0_cry_10_c_inv, PWM_OUT0_cry_10_c }
+ble_pack PWM_OUT0_cry_11_c_inv_LC_2_9_7 { PWM_OUT0_cry_11_c_inv, PWM_OUT0_cry_11_c }
+clb_pack LT_2_9 { PWM_OUT0_cry_4_c_inv_LC_2_9_0, PWM_OUT0_cry_5_c_inv_LC_2_9_1, PWM_OUT0_cry_6_c_inv_LC_2_9_2, PWM_OUT0_cry_7_c_inv_LC_2_9_3, PWM_OUT0_cry_8_c_inv_LC_2_9_4, PWM_OUT0_cry_9_c_inv_LC_2_9_5, PWM_OUT0_cry_10_c_inv_LC_2_9_6, PWM_OUT0_cry_11_c_inv_LC_2_9_7 }
+set_location LT_2_9 2 9
+ble_pack PWM_OUT0_cry_12_c_inv_LC_2_10_0 { PWM_OUT0_cry_12_c_inv, PWM_OUT0_cry_12_c }
+ble_pack PWM_OUT0_cry_13_c_inv_LC_2_10_1 { PWM_OUT0_cry_13_c_inv, PWM_OUT0_cry_13_c }
+ble_pack PWM_OUT0_cry_14_c_inv_LC_2_10_2 { PWM_OUT0_cry_14_c_inv, PWM_OUT0_cry_14_c }
+ble_pack PWM_OUT0_cry_15_c_inv_LC_2_10_3 { PWM_OUT0_cry_15_c_inv, PWM_OUT0_cry_15_c }
+ble_pack PWM_OUT0_cry_16_c_inv_LC_2_10_4 { PWM_OUT0_cry_16_c_inv, PWM_OUT0_cry_16_c }
+ble_pack PWM_OUT0_cry_17_c_inv_LC_2_10_5 { PWM_OUT0_cry_17_c_inv, PWM_OUT0_cry_17_c }
+ble_pack PWM_OUT0_cry_18_c_LC_2_10_6 { PWM_OUT0_cry_18_c }
+ble_pack PWM_OUT0_c_THRU_LUT4_0_LC_2_10_7 { PWM_OUT0_c_THRU_LUT4_0 }
+clb_pack LT_2_10 { PWM_OUT0_cry_12_c_inv_LC_2_10_0, PWM_OUT0_cry_13_c_inv_LC_2_10_1, PWM_OUT0_cry_14_c_inv_LC_2_10_2, PWM_OUT0_cry_15_c_inv_LC_2_10_3, PWM_OUT0_cry_16_c_inv_LC_2_10_4, PWM_OUT0_cry_17_c_inv_LC_2_10_5, PWM_OUT0_cry_18_c_LC_2_10_6, PWM_OUT0_c_THRU_LUT4_0_LC_2_10_7 }
+set_location LT_2_10 2 10
+ble_pack un1_DUTY_CYCLE1_2_cry_4_c_LC_4_3_0 { un1_DUTY_CYCLE1_2_cry_4_c }
+ble_pack DUTY_CYCLE1_5_LC_4_3_1 { DUTY_CYCLE1_RNO[5], DUTY_CYCLE1[5], un1_DUTY_CYCLE1_2_cry_5_c }
+ble_pack DUTY_CYCLE1_6_LC_4_3_2 { DUTY_CYCLE1_RNO[6], DUTY_CYCLE1[6], un1_DUTY_CYCLE1_2_cry_6_c }
+ble_pack DUTY_CYCLE1_7_LC_4_3_3 { DUTY_CYCLE1_RNO[7], DUTY_CYCLE1[7], un1_DUTY_CYCLE1_2_cry_7_0_c }
+ble_pack DUTY_CYCLE1_8_LC_4_3_4 { DUTY_CYCLE1_RNO[8], DUTY_CYCLE1[8], un1_DUTY_CYCLE1_2_cry_8_c }
+ble_pack DUTY_CYCLE1_9_LC_4_3_5 { DUTY_CYCLE1_RNO[9], DUTY_CYCLE1[9], un1_DUTY_CYCLE1_2_cry_9_c }
+ble_pack DUTY_CYCLE1_10_LC_4_3_6 { DUTY_CYCLE1_RNO[10], DUTY_CYCLE1[10], un1_DUTY_CYCLE1_2_cry_10_c }
+ble_pack DUTY_CYCLE1_11_LC_4_3_7 { DUTY_CYCLE1_RNO[11], DUTY_CYCLE1[11], un1_DUTY_CYCLE1_2_cry_11_0_c }
+clb_pack LT_4_3 { un1_DUTY_CYCLE1_2_cry_4_c_LC_4_3_0, DUTY_CYCLE1_5_LC_4_3_1, DUTY_CYCLE1_6_LC_4_3_2, DUTY_CYCLE1_7_LC_4_3_3, DUTY_CYCLE1_8_LC_4_3_4, DUTY_CYCLE1_9_LC_4_3_5, DUTY_CYCLE1_10_LC_4_3_6, DUTY_CYCLE1_11_LC_4_3_7 }
+set_location LT_4_3 4 3
+ble_pack DUTY_CYCLE1_12_LC_4_4_0 { DUTY_CYCLE1_RNO[12], DUTY_CYCLE1[12], un1_DUTY_CYCLE1_2_cry_12_c }
+ble_pack DUTY_CYCLE1_13_LC_4_4_1 { DUTY_CYCLE1_RNO[13], DUTY_CYCLE1[13], un1_DUTY_CYCLE1_2_cry_13_0_c }
+ble_pack DUTY_CYCLE1_14_LC_4_4_2 { DUTY_CYCLE1_RNO[14], DUTY_CYCLE1[14], un1_DUTY_CYCLE1_2_cry_14_0_c }
+ble_pack DUTY_CYCLE1_15_LC_4_4_3 { DUTY_CYCLE1_RNO[15], DUTY_CYCLE1[15], un1_DUTY_CYCLE1_2_cry_15_0_c }
+ble_pack DUTY_CYCLE1_16_LC_4_4_4 { DUTY_CYCLE1_RNO[16], DUTY_CYCLE1[16] }
+ble_pack un1_DUTY_CYCLE1_2_cry_4_c_RNO_LC_4_4_5 { un1_DUTY_CYCLE1_2_cry_4_c_RNO }
+ble_pack DUTY_CYCLE1_RNIEO8K1_7_LC_4_4_6 { DUTY_CYCLE1_RNIEO8K1[7] }
+ble_pack DUTY_CYCLE1_RNI0I6D1_11_LC_4_4_7 { DUTY_CYCLE1_RNI0I6D1[11] }
+clb_pack LT_4_4 { DUTY_CYCLE1_12_LC_4_4_0, DUTY_CYCLE1_13_LC_4_4_1, DUTY_CYCLE1_14_LC_4_4_2, DUTY_CYCLE1_15_LC_4_4_3, DUTY_CYCLE1_16_LC_4_4_4, un1_DUTY_CYCLE1_2_cry_4_c_RNO_LC_4_4_5, DUTY_CYCLE1_RNIEO8K1_7_LC_4_4_6, DUTY_CYCLE1_RNI0I6D1_11_LC_4_4_7 }
+set_location LT_4_4 4 4
+ble_pack DUTY_CYCLE0_RNIEVQJ6_10_LC_4_5_1 { DUTY_CYCLE0_RNIEVQJ6[10] }
+ble_pack DUTY_CYCLE0_RNI85EK3_11_LC_4_5_6 { DUTY_CYCLE0_RNI85EK3[11] }
+ble_pack DUTY_CYCLE0_RNI32UK6_6_LC_4_5_7 { DUTY_CYCLE0_RNI32UK6[6] }
+clb_pack LT_4_5 { DUTY_CYCLE0_RNIEVQJ6_10_LC_4_5_1, DUTY_CYCLE0_RNI85EK3_11_LC_4_5_6, DUTY_CYCLE0_RNI32UK6_6_LC_4_5_7 }
+set_location LT_4_5 4 5
+ble_pack DUTY_CYCLE0_RNI21UK6_5_LC_4_6_1 { DUTY_CYCLE0_RNI21UK6[5] }
+ble_pack DUTY_CYCLE0_RNI65UK6_9_LC_4_6_4 { DUTY_CYCLE0_RNI65UK6[9] }
+ble_pack DUTY_CYCLE0_RNI6FK01_13_LC_4_6_5 { DUTY_CYCLE0_RNI6FK01[13] }
+ble_pack DUTY_CYCLE0_RNI54UK6_8_LC_4_6_6 { DUTY_CYCLE0_RNI54UK6[8] }
+ble_pack DUTY_CYCLE0_RNIG1RJ6_12_LC_4_6_7 { DUTY_CYCLE0_RNIG1RJ6[12] }
+clb_pack LT_4_6 { DUTY_CYCLE0_RNI21UK6_5_LC_4_6_1, DUTY_CYCLE0_RNI65UK6_9_LC_4_6_4, DUTY_CYCLE0_RNI6FK01_13_LC_4_6_5, DUTY_CYCLE0_RNI54UK6_8_LC_4_6_6, DUTY_CYCLE0_RNIG1RJ6_12_LC_4_6_7 }
+set_location LT_4_6 4 6
+ble_pack PWM_DFF6.Q_LC_5_2_1 { PWM_DFF6.Q_THRU_LUT4_0, PWM_DFF6.Q }
+ble_pack PWM_DFF5.Q_LC_5_2_2 { PWM_DFF5.Q_THRU_LUT4_0, PWM_DFF5.Q }
+clb_pack LT_5_2 { PWM_DFF6.Q_LC_5_2_1, PWM_DFF5.Q_LC_5_2_2 }
+set_location LT_5_2 5 2
+ble_pack DUTY_CYCLE1_RNIDU8O1_7_LC_5_3_1 { DUTY_CYCLE1_RNIDU8O1[7] }
+ble_pack DUTY_CYCLE1_RNIV2B52_4_LC_5_3_2 { DUTY_CYCLE1_RNIV2B52[4] }
+ble_pack PWM_DFF6.Q_RNI0DI21_LC_5_3_3 { PWM_DFF6.Q_RNI0DI21 }
+ble_pack DUTY_CYCLE1_RNISP8M1_5_LC_5_3_4 { DUTY_CYCLE1_RNISP8M1[5] }
+ble_pack PWM_DFF8.Q_RNI8DHB6_LC_5_3_5 { PWM_DFF8.Q_RNI8DHB6 }
+ble_pack DUTY_CYCLE1_4_LC_5_3_6 { DUTY_CYCLE1_RNO[4], DUTY_CYCLE1[4] }
+ble_pack PWM_DFF8.Q_RNIV9KJ_LC_5_3_7 { PWM_DFF8.Q_RNIV9KJ }
+clb_pack LT_5_3 { DUTY_CYCLE1_RNIDU8O1_7_LC_5_3_1, DUTY_CYCLE1_RNIV2B52_4_LC_5_3_2, PWM_DFF6.Q_RNI0DI21_LC_5_3_3, DUTY_CYCLE1_RNISP8M1_5_LC_5_3_4, PWM_DFF8.Q_RNI8DHB6_LC_5_3_5, DUTY_CYCLE1_4_LC_5_3_6, PWM_DFF8.Q_RNIV9KJ_LC_5_3_7 }
+set_location LT_5_3 5 3
+ble_pack PWM_DFF8.Q_RNIKO92F_0_LC_5_4_0 { PWM_DFF8.Q_RNIKO92F_0 }
+ble_pack DUTY_CYCLE1_RNIE69S1_16_LC_5_4_1 { DUTY_CYCLE1_RNIE69S1[16] }
+ble_pack PWM_DFF8.Q_RNIKO92F_1_LC_5_4_2 { PWM_DFF8.Q_RNIKO92F_1 }
+ble_pack counter_debounce_0_LC_5_4_3 { counter_debounce_RNO[0], counter_debounce[0] }
+ble_pack PWM_DFF4.Q_RNIEU26C_4_LC_5_4_4 { PWM_DFF4.Q_RNIEU26C_4 }
+ble_pack PWM_DFF8.Q_RNIKO92F_3_LC_5_4_5 { PWM_DFF8.Q_RNIKO92F_3 }
+ble_pack PWM_DFF4.Q_RNIEU26C_5_LC_5_4_6 { PWM_DFF4.Q_RNIEU26C_5 }
+ble_pack PWM_DFF8.Q_RNIKO92F_LC_5_4_7 { PWM_DFF8.Q_RNIKO92F }
+clb_pack LT_5_4 { PWM_DFF8.Q_RNIKO92F_0_LC_5_4_0, DUTY_CYCLE1_RNIE69S1_16_LC_5_4_1, PWM_DFF8.Q_RNIKO92F_1_LC_5_4_2, counter_debounce_0_LC_5_4_3, PWM_DFF4.Q_RNIEU26C_4_LC_5_4_4, PWM_DFF8.Q_RNIKO92F_3_LC_5_4_5, PWM_DFF4.Q_RNIEU26C_5_LC_5_4_6, PWM_DFF8.Q_RNIKO92F_LC_5_4_7 }
+set_location LT_5_4 5 4
+ble_pack DUTY_CYCLE0_RNICESF1_4_LC_5_5_0 { DUTY_CYCLE0_RNICESF1[4] }
+ble_pack PWM_DFF2.Q_RNI2ASJ1_LC_5_5_1 { PWM_DFF2.Q_RNI2ASJ1 }
+ble_pack DUTY_CYCLE0_RNIILSL_18_LC_5_5_2 { DUTY_CYCLE0_RNIILSL[18] }
+ble_pack DUTY_CYCLE0_RNITHPE1_7_LC_5_5_3 { DUTY_CYCLE0_RNITHPE1[7] }
+ble_pack DUTY_CYCLE0_RNI85EK3_0_11_LC_5_5_4 { DUTY_CYCLE0_RNI85EK3_0[11] }
+ble_pack PWM_DFF2.Q_RNIGUU86_LC_5_5_5 { PWM_DFF2.Q_RNIGUU86 }
+ble_pack un1_DUTY_CYCLE0_2_cry_4_c_RNO_LC_5_5_6 { un1_DUTY_CYCLE0_2_cry_4_c_RNO }
+ble_pack PWM_DFF4.Q_RNIEU26C_3_LC_5_5_7 { PWM_DFF4.Q_RNIEU26C_3 }
+clb_pack LT_5_5 { DUTY_CYCLE0_RNICESF1_4_LC_5_5_0, PWM_DFF2.Q_RNI2ASJ1_LC_5_5_1, DUTY_CYCLE0_RNIILSL_18_LC_5_5_2, DUTY_CYCLE0_RNITHPE1_7_LC_5_5_3, DUTY_CYCLE0_RNI85EK3_0_11_LC_5_5_4, PWM_DFF2.Q_RNIGUU86_LC_5_5_5, un1_DUTY_CYCLE0_2_cry_4_c_RNO_LC_5_5_6, PWM_DFF4.Q_RNIEU26C_3_LC_5_5_7 }
+set_location LT_5_5 5 5
+ble_pack un1_DUTY_CYCLE0_2_cry_4_c_LC_5_6_0 { un1_DUTY_CYCLE0_2_cry_4_c }
+ble_pack DUTY_CYCLE0_5_LC_5_6_1 { DUTY_CYCLE0_RNO[5], DUTY_CYCLE0[5], un1_DUTY_CYCLE0_2_cry_5_c }
+ble_pack DUTY_CYCLE0_6_LC_5_6_2 { DUTY_CYCLE0_RNO[6], DUTY_CYCLE0[6], un1_DUTY_CYCLE0_2_cry_6_c }
+ble_pack DUTY_CYCLE0_7_LC_5_6_3 { DUTY_CYCLE0_RNO[7], DUTY_CYCLE0[7], un1_DUTY_CYCLE0_2_cry_7_0_c }
+ble_pack DUTY_CYCLE0_8_LC_5_6_4 { DUTY_CYCLE0_RNO[8], DUTY_CYCLE0[8], un1_DUTY_CYCLE0_2_cry_8_c }
+ble_pack DUTY_CYCLE0_9_LC_5_6_5 { DUTY_CYCLE0_RNO[9], DUTY_CYCLE0[9], un1_DUTY_CYCLE0_2_cry_9_c }
+ble_pack DUTY_CYCLE0_10_LC_5_6_6 { DUTY_CYCLE0_RNO[10], DUTY_CYCLE0[10], un1_DUTY_CYCLE0_2_cry_10_c }
+ble_pack DUTY_CYCLE0_11_LC_5_6_7 { DUTY_CYCLE0_RNO[11], DUTY_CYCLE0[11], un1_DUTY_CYCLE0_2_cry_11_0_c }
+clb_pack LT_5_6 { un1_DUTY_CYCLE0_2_cry_4_c_LC_5_6_0, DUTY_CYCLE0_5_LC_5_6_1, DUTY_CYCLE0_6_LC_5_6_2, DUTY_CYCLE0_7_LC_5_6_3, DUTY_CYCLE0_8_LC_5_6_4, DUTY_CYCLE0_9_LC_5_6_5, DUTY_CYCLE0_10_LC_5_6_6, DUTY_CYCLE0_11_LC_5_6_7 }
+set_location LT_5_6 5 6
+ble_pack DUTY_CYCLE0_12_LC_5_7_0 { DUTY_CYCLE0_RNO[12], DUTY_CYCLE0[12], un1_DUTY_CYCLE0_2_cry_12_c }
+ble_pack DUTY_CYCLE0_13_LC_5_7_1 { DUTY_CYCLE0_RNO[13], DUTY_CYCLE0[13], un1_DUTY_CYCLE0_2_cry_13_0_c }
+ble_pack DUTY_CYCLE0_14_LC_5_7_2 { DUTY_CYCLE0_RNO[14], DUTY_CYCLE0[14], un1_DUTY_CYCLE0_2_cry_14_0_c }
+ble_pack DUTY_CYCLE0_15_LC_5_7_3 { DUTY_CYCLE0_RNO[15], DUTY_CYCLE0[15], un1_DUTY_CYCLE0_2_cry_15_0_c }
+ble_pack DUTY_CYCLE0_16_LC_5_7_4 { DUTY_CYCLE0_RNO[16], DUTY_CYCLE0[16], un1_DUTY_CYCLE0_2_cry_16_0_c }
+ble_pack DUTY_CYCLE0_17_LC_5_7_5 { DUTY_CYCLE0_RNO[17], DUTY_CYCLE0[17], un1_DUTY_CYCLE0_2_cry_17_0_c }
+ble_pack DUTY_CYCLE0_18_LC_5_7_6 { DUTY_CYCLE0_RNO[18], DUTY_CYCLE0[18] }
+ble_pack PWM_DFF4.Q_RNIEU26C_1_LC_5_7_7 { PWM_DFF4.Q_RNIEU26C_1 }
+clb_pack LT_5_7 { DUTY_CYCLE0_12_LC_5_7_0, DUTY_CYCLE0_13_LC_5_7_1, DUTY_CYCLE0_14_LC_5_7_2, DUTY_CYCLE0_15_LC_5_7_3, DUTY_CYCLE0_16_LC_5_7_4, DUTY_CYCLE0_17_LC_5_7_5, DUTY_CYCLE0_18_LC_5_7_6, PWM_DFF4.Q_RNIEU26C_1_LC_5_7_7 }
+set_location LT_5_7 5 7
+ble_pack PWM_DFF2.Q_LC_6_3_0 { PWM_DFF2.Q_THRU_LUT4_0, PWM_DFF2.Q }
+ble_pack PWM_DFF7.Q_LC_6_3_1 { PWM_DFF7.Q_THRU_LUT4_0, PWM_DFF7.Q }
+ble_pack PWM_DFF1.Q_LC_6_3_2 { PWM_DFF1.Q_THRU_LUT4_0, PWM_DFF1.Q }
+ble_pack PWM_DFF8.Q_LC_6_3_3 { PWM_DFF8.Q_THRU_LUT4_0, PWM_DFF8.Q }
+clb_pack LT_6_3 { PWM_DFF2.Q_LC_6_3_0, PWM_DFF7.Q_LC_6_3_1, PWM_DFF1.Q_LC_6_3_2, PWM_DFF8.Q_LC_6_3_3 }
+set_location LT_6_3 6 3
+ble_pack PWM_DFF2.Q_RNIGKVT_LC_6_4_0 { PWM_DFF2.Q_RNIGKVT }
+clb_pack LT_6_4 { PWM_DFF2.Q_RNIGKVT_LC_6_4_0 }
+set_location LT_6_4 6 4
+ble_pack DUTY_CYCLE0_RNI6DMD1_10_LC_6_5_2 { DUTY_CYCLE0_RNI6DMD1[10] }
+ble_pack DUTY_CYCLE0_RNI76O95_10_LC_6_5_3 { DUTY_CYCLE0_RNI76O95[10] }
+ble_pack PWM_DFF4.Q_RNIUV3T5_LC_6_5_4 { PWM_DFF4.Q_RNIUV3T5 }
+ble_pack PWM_DFF4.Q_RNIEU26C_LC_6_5_5 { PWM_DFF4.Q_RNIEU26C }
+clb_pack LT_6_5 { DUTY_CYCLE0_RNI6DMD1_10_LC_6_5_2, DUTY_CYCLE0_RNI76O95_10_LC_6_5_3, PWM_DFF4.Q_RNIUV3T5_LC_6_5_4, PWM_DFF4.Q_RNIEU26C_LC_6_5_5 }
+set_location LT_6_5 6 5
+ble_pack DUTY_CYCLE0_RNI5CMD1_7_LC_6_6_0 { DUTY_CYCLE0_RNI5CMD1[7] }
+ble_pack DUTY_CYCLE0_RNIDKMD1_14_LC_6_6_1 { DUTY_CYCLE0_RNIDKMD1[14] }
+ble_pack DUTY_CYCLE0_4_LC_6_6_2 { DUTY_CYCLE0_RNO[4], DUTY_CYCLE0[4] }
+ble_pack DUTY_CYCLE0_RNI6FK01_0_13_LC_6_6_3 { DUTY_CYCLE0_RNI6FK01_0[13] }
+ble_pack DUTY_CYCLE0_RNIFOK01_18_LC_6_6_4 { DUTY_CYCLE0_RNIFOK01[18] }
+ble_pack PWM_DFF4.Q_RNIEU26C_0_LC_6_6_7 { PWM_DFF4.Q_RNIEU26C_0 }
+clb_pack LT_6_6 { DUTY_CYCLE0_RNI5CMD1_7_LC_6_6_0, DUTY_CYCLE0_RNIDKMD1_14_LC_6_6_1, DUTY_CYCLE0_4_LC_6_6_2, DUTY_CYCLE0_RNI6FK01_0_13_LC_6_6_3, DUTY_CYCLE0_RNIFOK01_18_LC_6_6_4, PWM_DFF4.Q_RNIEU26C_0_LC_6_6_7 }
+set_location LT_6_6 6 6
+ble_pack PWM_DFF4.Q_RNIEU26C_2_LC_6_7_6 { PWM_DFF4.Q_RNIEU26C_2 }
+clb_pack LT_6_7 { PWM_DFF4.Q_RNIEU26C_2_LC_6_7_6 }
+set_location LT_6_7 6 7
+ble_pack PWM_DFF4.Q_LC_7_4_2 { PWM_DFF4.Q_THRU_LUT4_0, PWM_DFF4.Q }
+ble_pack PWM_DFF3.Q_LC_7_4_7 { PWM_DFF3.Q_THRU_LUT4_0, PWM_DFF3.Q }
+clb_pack LT_7_4 { PWM_DFF4.Q_LC_7_4_2, PWM_DFF3.Q_LC_7_4_7 }
+set_location LT_7_4 7 4
+set_location counter_PWM0_RNIL85G2_0[17] 0 8
+set_io increase_duty0 60
+set_io decrease_duty1 45
+set_io PWM_OUT1 47
+set_io increase_duty1 44
+set_io decrease_duty0 61
+set_io clk 21
+set_io PWM_OUT0 62

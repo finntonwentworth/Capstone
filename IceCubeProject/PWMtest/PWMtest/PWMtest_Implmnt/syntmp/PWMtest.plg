@@ -1,0 +1,12 @@
+@P:  Worst Slack : -1.970
+@P:  PWM_Generator_Verilog|clk - Estimated Frequency : 76.1 MHz
+@P:  PWM_Generator_Verilog|clk - Requested Frequency : 89.6 MHz
+@P:  PWM_Generator_Verilog|clk - Estimated Period : 13.136
+@P:  PWM_Generator_Verilog|clk - Requested Period : 11.165
+@P:  PWM_Generator_Verilog|clk - Slack : -1.970
+@P: PWM_Generator_Verilog Part : ice40hx1ktq144
+@P: PWM_Generator_Verilog I/O primitives : 7
+@P: PWM_Generator_Verilog I/O Register bits : 0
+@P: PWM_Generator_Verilog Register bits (Non I/O) : 72 (5%)
+@P: PWM_Generator_Verilog Total Luts : 152 (11%)
+@P:  CPU Time : 0h:00m:00s

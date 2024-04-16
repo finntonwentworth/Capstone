@@ -1,0 +1,163 @@
+#### START OF AREA REPORT #####[
+
+Part:			ICE40HX1KTQ144 (Lattice)
+
+-------------------------------------------------------------------------------------
+########   Utilization report for  Top level view:   PWM_Generator_Verilog   ########
+=====================================================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     72                 100 %                
+==================================================
+Total SEQUENTIAL ELEMENTS in the block PWM_Generator_Verilog:	72 (21.43 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+LUTS       152                100 %                
+CARRYS     86                 100 %                
+===================================================
+Total COMBINATIONAL LOGIC in the block PWM_Generator_Verilog:	238 (70.83 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+PADS     8                  100 %                
+=================================================
+Total IO PADS in the block PWM_Generator_Verilog:	8 (2.38 % Utilization)
+
+-------------------------------------------------------------
+########   Utilization report for  cell:   DFF_PWM   ########
+Instance path:   PWM_Generator_Verilog.DFF_PWM               
+=============================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     1                  1.39 %               
+==================================================
+Total SEQUENTIAL ELEMENTS in the block PWM_Generator_Verilog.DFF_PWM:	1 (0.30 % Utilization)
+
+---------------------------------------------------------------
+########   Utilization report for  cell:   DFF_PWM_0   ########
+Instance path:   PWM_Generator_Verilog.DFF_PWM_0               
+===============================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     1                  1.39 %               
+==================================================
+Total SEQUENTIAL ELEMENTS in the block PWM_Generator_Verilog.DFF_PWM_0:	1 (0.30 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     3                  1.97 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block PWM_Generator_Verilog.DFF_PWM_0:	3 (0.89 % Utilization)
+
+---------------------------------------------------------------
+########   Utilization report for  cell:   DFF_PWM_1   ########
+Instance path:   PWM_Generator_Verilog.DFF_PWM_1               
+===============================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     1                  1.39 %               
+==================================================
+Total SEQUENTIAL ELEMENTS in the block PWM_Generator_Verilog.DFF_PWM_1:	1 (0.30 % Utilization)
+
+---------------------------------------------------------------
+########   Utilization report for  cell:   DFF_PWM_2   ########
+Instance path:   PWM_Generator_Verilog.DFF_PWM_2               
+===============================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     1                  1.39 %               
+==================================================
+Total SEQUENTIAL ELEMENTS in the block PWM_Generator_Verilog.DFF_PWM_2:	1 (0.30 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     8                  5.26 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block PWM_Generator_Verilog.DFF_PWM_2:	8 (2.38 % Utilization)
+
+---------------------------------------------------------------
+########   Utilization report for  cell:   DFF_PWM_3   ########
+Instance path:   PWM_Generator_Verilog.DFF_PWM_3               
+===============================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     1                  1.39 %               
+==================================================
+Total SEQUENTIAL ELEMENTS in the block PWM_Generator_Verilog.DFF_PWM_3:	1 (0.30 % Utilization)
+
+---------------------------------------------------------------
+########   Utilization report for  cell:   DFF_PWM_4   ########
+Instance path:   PWM_Generator_Verilog.DFF_PWM_4               
+===============================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     1                  1.39 %               
+==================================================
+Total SEQUENTIAL ELEMENTS in the block PWM_Generator_Verilog.DFF_PWM_4:	1 (0.30 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6580 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block PWM_Generator_Verilog.DFF_PWM_4:	1 (0.30 % Utilization)
+
+---------------------------------------------------------------
+########   Utilization report for  cell:   DFF_PWM_5   ########
+Instance path:   PWM_Generator_Verilog.DFF_PWM_5               
+===============================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     1                  1.39 %               
+==================================================
+Total SEQUENTIAL ELEMENTS in the block PWM_Generator_Verilog.DFF_PWM_5:	1 (0.30 % Utilization)
+
+---------------------------------------------------------------
+########   Utilization report for  cell:   DFF_PWM_6   ########
+Instance path:   PWM_Generator_Verilog.DFF_PWM_6               
+===============================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     1                  1.39 %               
+==================================================
+Total SEQUENTIAL ELEMENTS in the block PWM_Generator_Verilog.DFF_PWM_6:	1 (0.30 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     7                  4.61 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block PWM_Generator_Verilog.DFF_PWM_6:	7 (2.08 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

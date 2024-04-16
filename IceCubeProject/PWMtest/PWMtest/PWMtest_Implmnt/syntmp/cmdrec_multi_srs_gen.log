@@ -1,0 +1,7 @@
+D:\IceCube2\synpbase\bin64\syn_nfilter.exe  -link  -multisrs  D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\synwork\PWMtest_comp.srs  -osyn  D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\synwork\PWMtest_mult.srs  -log  D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\synlog\PWMtest_multi_srs_gen.srr 
+rc:0 success:1 runtime:0
+file:D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\synwork\PWMtest_comp.srs|io:i|time:1701056694|size:4379|exec:0
+file:D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\synwork\PWMtest_mult.srs|io:o|time:1701056695|size:4197|exec:0
+file:D:\IceCube2\verilog\Projects\PWMtest\PWMtest_Implmnt\synlog\PWMtest_multi_srs_gen.srr|io:o|time:1701056695|size:773|exec:0
+file:D:\IceCube2\synpbase\bin\syn_nfilter.exe|io:i|time:1699205933|size:3128320|exec:1
+file:D:\IceCube2\synpbase\bin64\syn_nfilter.exe|io:i|time:1699205934|size:3947520|exec:1
