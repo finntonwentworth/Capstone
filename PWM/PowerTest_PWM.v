@@ -10,10 +10,12 @@ module PWM_Generator_Verilog
  increase_duty1, // input to increase 10% duty cycle 
  decrease_duty1, // input to decrease 10% duty cycle 
 
+ increase_duty2,
+ decrease_duty2,
 
  PWM_OUT0, // 50Hz PWM output signal  
- PWM_OUT1 // 500 Hz PWM output, for ESC
-
+ PWM_OUT1, // 500 Hz PWM output, for ESC
+ PWM_OUT1  // 50Hz PWM output signal - servo 2
 
     );
  input clk;
@@ -21,9 +23,11 @@ module PWM_Generator_Verilog
  input decrease_duty0;
  input increase_duty1;
  input decrease_duty1;
+ input increase_duty2;
+ input decrease_duty2;
  output PWM_OUT0;
  output PWM_OUT1; 
-
+ output PWM_OUT2;
 
  wire slow_clk_enable; // slow clock enable signal for debouncing FFs
  reg[27:0] counter_debounce=0;// counter for creating slow clock enable signals 
@@ -31,16 +35,19 @@ module PWM_Generator_Verilog
  wire tmp3,tmp4,duty_dec0;// temporary flip-flop signals for debouncing the decreasing button
  wire tmp5,tmp6, duty_inc1;// temporary flip-flop signals for debouncing the increasing button - ESC
  wire tmp7,tmp8, duty_dec1;// temporary flip-flop signals for debouncing the decreasing button - ESC
-
+ wire tmp9,tmp10, duty_inc2;
+ wire tmp11, tmp12, duty_inc2;
 
  reg[18:0] counter_PWM0=0;// counter for creating 50 Hz PWM signal
  reg[16:0] counter_PWM1=0;// counter for creating 500 Hz PWM signal
-
+ reg[18:0] counter_PWM2=0;// counter for creating 50 Hz PWM Signal for servo 2
 
  reg[18:0] DUTY_CYCLE0=60000; 
  reg[16:0] DUTY_CYCLE1=6000; 
-
-  // Debouncing 2 buttons for inc/dec duty cycle 
+ reg[18:0] DUTY_CYCLE2=60000; 
+  
+ 
+ // Debouncing 2 buttons for inc/dec duty cycle 
   // Firstly generate slow clock enable for debouncing flip-flop (4Hz)
  always @(posedge clk)
  begin
@@ -64,7 +71,6 @@ module PWM_Generator_Verilog
  // debouncing FFs for increasing button - Servo
  DFF_PWM PWM_DFF1(clk,slow_clk_enable,increase_duty0,tmp1);
  DFF_PWM PWM_DFF2(clk,slow_clk_enable,tmp1, tmp2); 
-
  assign duty_inc0 =  tmp1 & (~ tmp2) & slow_clk_enable;
 
  // debouncing FFs for decreasing button
@@ -78,7 +84,6 @@ module PWM_Generator_Verilog
  // debouncing FFs for increasing button - ESC
  DFF_PWM PWM_DFF5(clk,slow_clk_enable,increase_duty1,tmp5);
  DFF_PWM PWM_DFF6(clk,slow_clk_enable,tmp5, tmp6); 
-
  assign duty_inc1 =  tmp5 & (~ tmp6) & slow_clk_enable;
 
  // debouncing FFs for decreasing button
@@ -87,9 +92,15 @@ module PWM_Generator_Verilog
  assign duty_dec1 =  tmp7 & (~ tmp8) & slow_clk_enable;
  // vary the duty cycle using the debounced buttons above
 
+ 
+ DFF_PWM PWM_DFF9(clk,slow_clk_enable,decrease_duty1, tmp9);
+ DFF_PWM PWM_DFF10(clk,slow_clk_enable,tmp9, tmp10); 
+ assign duty_inc2 =  tmp9 & (~ tmp10) & slow_clk_enable;
 
 
-
+ DFF_PWM PWM_DFF11(clk,slow_clk_enable,decrease_duty2, tmp11);
+ DFF_PWM PWM_DFF12(clk,slow_clk_enable,tmp11, tmp12); 
+ assign duty_dec2 =  tmp11 & (~ tmp12) & slow_clk_enable;
 
 
  always @(posedge clk)
@@ -128,7 +139,27 @@ module PWM_Generator_Verilog
 endmodule
 
 
+ always @(posedge clk)
+ begin
+   if(duty_inc2==1 && DUTY_CYCLE2 <= 6000) 
+    DUTY_CYCLE2 <= DUTY_CYCLE2 + 600;// increase duty cycle by 10%
+   else if(duty_dec2==1 && DUTY_CYCLE2>=1) 
+    DUTY_CYCLE2 <= DUTY_CYCLE2 - 600;//decrease duty cycle by 10%
+ end 
+// Create 500 Hz PWM signal with variable duty cycle controlled by 2 buttons 
+ always @(posedge clk)
+ begin
+   counter_PWM2 <= counter_PWM2 + 1;
+   if(counter_PWM2>=24000) 
+    counter_PWM2 <= 0;
+ end
+ assign PWM_OUT2 = counter_PWM2 < DUTY_CYCLE2 ? 1:0;
+endmodule
+
+
+
 // Debouncing DFFs for push buttons on FPGA
+// module definition
 module DFF_PWM(clk,en,D,Q);
 input clk,en,D;
 output reg Q;
