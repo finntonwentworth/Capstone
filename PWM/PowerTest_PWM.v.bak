@@ -93,7 +93,7 @@ module PWM_Generator_Verilog
  // vary the duty cycle using the debounced buttons above
 
  
- DFF_PWM PWM_DFF9(clk,slow_clk_enable,decrease_duty2, tmp9);
+ DFF_PWM PWM_DFF9(clk,slow_clk_enable,decrease_duty1, tmp9);
  DFF_PWM PWM_DFF10(clk,slow_clk_enable,tmp9, tmp10); 
  assign duty_inc2 =  tmp9 & (~ tmp10) & slow_clk_enable;
 
@@ -118,7 +118,7 @@ module PWM_Generator_Verilog
     counter_PWM0 <= 0;
  end
  assign PWM_OUT0 = counter_PWM0 < DUTY_CYCLE0 ? 1:0;
- assign PWM_OUT2 = counter_PWM0 < DUTY_CYCLE0 ? 1:0;
+
 
 
  always @(posedge clk)
@@ -137,7 +137,7 @@ module PWM_Generator_Verilog
  end
  assign PWM_OUT1 = counter_PWM1 < DUTY_CYCLE1 ? 1:0;
 
-/*
+
 
  always @(posedge clk)
  begin
@@ -155,7 +155,6 @@ module PWM_Generator_Verilog
     counter_PWM2 <= 0;
  end
  assign PWM_OUT2 = counter_PWM2 < DUTY_CYCLE2 ? 1:0;
-*/
 endmodule
 
 
