@@ -64,7 +64,7 @@ module PWM_Generator_POWERTEST (
          duty_cycle_Servo2 <= 0;
          duty_cycle_ESC    <= 0;
      end
- // if button pressed and the button pressed flag is not set     
+ // if button pressed
      else if (i_start == 1 && i_reset == 1) begin
          //set duty cycle to 50%
          //does the servo continuously move ? or do I have to send differing
