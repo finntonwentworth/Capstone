@@ -62,7 +62,13 @@ module top_module (
 
   assign w_reset    = i_reset;  
 //SPI Controller Submodule
-  SPI_Master_With_Single_CS spiController (
+  SPI_Master_With_Single_CS #(
+      //define these 
+     .SPI_MODE(SPI_MODE),
+     .CLKS_PER_HALF_BIT(CLKS_PER_HALF_BIT),
+     .MAX_BYTES_PER_CS(MAX_BYTES_PER_CS),
+     .CS_INACTIVE_CLKS(CS_INACTIVE_CLKS)
+ ) spiController      (
       .i_Rst_L(w_reset        ),
       .i_Clk_(i_clk           ),
       .i_TX_Byte(r_TX_byte_reg),  //Data value to be sent 
@@ -86,8 +92,7 @@ module top_module (
     .Ki(w_Ki                ), 
     .Kd(w_Kd                ),
     .clk_prescaler(i_clk    ),
-    .control_signal(        )  //multiple drivers for feedback pin? - rd_byte and control 
-
+    .control_signal(        )  
   ); 
 
   PWM_Generator_Verilog pwmController (
@@ -117,15 +122,20 @@ module top_module (
          end
          STANDBY: 
          begin
+             //Wait for command signals 
          end
          READ_IMU:
          begin
+             //Send read byte command 
+             //
          end
          OUTPUT_VALUE:
          begin
+             //send read value to PID module 
          end
          CLEANUP:
          begin
+             //reset command signals and move back to standby 
          end
      endcase 
   end 
