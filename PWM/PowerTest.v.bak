@@ -59,7 +59,7 @@ module PWM_Generator_POWERTEST (
  // block  for on-off behavior
  always @(posedge i_clk) 
  begin
-     if(~i_reset) begin
+     if(i_reset == 0) begin
          duty_cycle_Servo1 <= 0; 
          duty_cycle_Servo2 <= 0;
          duty_cycle_ESC    <= 0;
@@ -69,9 +69,13 @@ module PWM_Generator_POWERTEST (
          //set duty cycle to 50%
          //does the servo continuously move ? or do I have to send differing
          //signals? 
-         duty_cycle_Servo1 <= duty_cycle_Servo1 + 12000; 
-         duty_cycle_Servo2 <= duty_cycle_Servo1 + 12000;
-         duty_cycle_ESC    <= duty_cycle_ESC    + 1200; 
+       //  duty_cycle_Servo1 <= duty_cycle_Servo1 + 12000; 
+      //   duty_cycle_Servo2 <= duty_cycle_Servo1 + 12000;
+       //  duty_cycle_ESC    <= duty_cycle_ESC    + 1200; 
+
+	 duty_cycle_Servo1 <= 12000; 
+         duty_cycle_Servo2 <= 12000;
+         duty_cycle_ESC    <= 1200; 
      end   
  end         
 

@@ -25,53 +25,8 @@ module  i2c_master_single_byte_TB  ();
        wire       w_io_scl;
        wire       w_io_sda;
 
-   
+       parameter SADR    = 7'b0010_000;
 
-
-/*
-  reg r_clk; 
-  reg r_rst;
-  //is this necessary for the module? 
-  reg r_enable;
-
-
-  wire [31:0] addr; 
-  wire [ 7:0] i_data, o_data, i_data0, i_data1; 
-  wire we; 
-  wire stb; 
-  wire cyc; 
-  wire ack0; 
-  wire ack1;
-  wire ack = ack0 | ack1; 
-  wire inta; 
-//wtf is q and qq? 
-  reg [7:0] q, qq; 
-
-  wire scl, o_scl0, scl0_oen, o_scl1, scl1_oen; 
-  wire sda, o_sda0, sda0_oen, o_sda1, sda1_oen; 
-*/
-
-  
-  
-/* 
-  {{{ 
-  parameter PRER_LO = 3'b000; 
-  parameter PRER_HI = 3'b001;
-  parameter CTR     = 3'b010;
-  parameter RXR     = 3'b011;
-  parameter TXR     = 3'b011;
-  parameter CR      = 3'b100;
-  parameter SR      = 3'b100;
-
-  parameter TXR_R   = 3'b101;
-  parameter CR_R    = 3'b110;
-
-  parameter RD      = 1'b1; 
-  parameter WR      = 1'b0; 
-
-  parameter SADR    = 7'b0010_000; 
-}}}
-*/
 
   //module body
  
@@ -83,7 +38,7 @@ module  i2c_master_single_byte_TB  ();
       .i_clk(r_clk), 
       .i_rst(r_rst),
       .i_enable(r_enable),
-      .i_slave_addr(w_slave_addr),
+      .i_slave_addr(SADR),
       .i_wr_start(r_wr_start), 
       .i_rd_start(r_rd_start),
       .i_wr_byte(r_wr_byte),
@@ -95,7 +50,11 @@ module  i2c_master_single_byte_TB  ();
 
   );
        
- 
+ // hookup i2c slave model
+	i2c_slave_model #(SADR) i2c_slave (
+		.scl(scl),
+		.sda(sda)
+	);
  
  
         always #5 r_clk = ~r_clk; 
