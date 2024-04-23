@@ -1,9 +1,17 @@
-# Capstone 
+# Capstone- ASU EGR402 S24
+## FPGA Based Avionics System for UAVs
 
 
-This repository is for storing the working code between my computers and to teach myself
-git. 
+Repository for storing working versions of capstone verilog 
 
-Cheers!
+Features partial code from: 
+
+    https://github.com/roboticvedant/Verilog-PID-Controller
+ 
+    https://www.fpga4student.com/2017/08/verilog-code-for-pwm-generator.html
+  
+    http://www.opencores.org/projects/i2c/
+
+
 
 
