@@ -1,30 +1,39 @@
 module PWM_Generator_Verilog
  (
  clk, // 12MHz clock input 
-
+/*
  // for Servo, at 50 Hz 
  increase_duty0, // input to increase 10% duty cycle 
  decrease_duty0, // input to decrease 10% duty cycle 
-
+ 
  // for ESC, at 500 Hz
  increase_duty1, // input to increase 10% duty cycle 
  decrease_duty1, // input to decrease 10% duty cycle 
 
  increase_duty2,
  decrease_duty2,
-
+*/
+ pwm0_set, 
+ pwm1_set,
+ pwm2_set,
  PWM_OUT0, // 50Hz PWM output signal  
  PWM_OUT1, // 500 Hz PWM output, for ESC
  PWM_OUT2  // 50Hz PWM output signal - servo 2
 
     );
+
  input clk;
+/* 
  input increase_duty0;
  input decrease_duty0;
  input increase_duty1;
  input decrease_duty1;
  input increase_duty2;
  input decrease_duty2;
+*/
+ input  pwm0_set; 
+ input  pwm1_set; 
+ input  pwm2_set; 
  output PWM_OUT0;
  output PWM_OUT1; 
  output PWM_OUT2;
