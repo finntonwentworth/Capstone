@@ -9,15 +9,18 @@ module topmodule_TB ();
    wire  w_SPI_MOSI;
    wire  w_SPI_MISO; 
    wire  w_SPI_CS_n;
-
+  
+   wire  w_pwm0; 
+   wire  w_pwm1; 
+   wire  w_pwm2; 
  
 
    top_module UUT (
      .i_clk(clk),
      .i_reset(r_reset),
-     .o_pwm0(),
-     .o_pwm1(),
-     .o_pwm2(),
+     .o_pwm0(w_pwm0),
+     .o_pwm1(w_pwm1),
+     .o_pwm2(w_pwm2),
      
      .o_SPI_MOSI(w_SPI_MOSI),
      .i_SPI_MISO(w_SPI_MOSI),

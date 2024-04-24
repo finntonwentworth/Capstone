@@ -33,8 +33,15 @@ module top_module (
     wire [7:0]  w_feedback_upper; 
     wire [7:0]  w_feedback_lower;
 
+    wire [15:0] w_control_out;
     wire [15:0] w_feedback_in;
-    reg  [15:0] w_clk_prescaler; 
+    reg  [15:0] w_clk_prescaler;
+/*
+    wire [15:0]	w_demux0;
+    wire [15:0]	w_demux1; 
+    wire [15:0] w_demux2;
+    wire [2:0 ] w_sel;
+*/
 // values for SPI    
     reg  [7:0] r_TX_byte_reg;
 
@@ -49,7 +56,7 @@ module top_module (
     reg [$clog2(MAX_BYTES_PER_CS+1)-1:0]       r_TX_count; 
 //state machine enumerations?
 //actions for reading values from imu and sending to PID
-  reg        [7:0] r_SM_Main;   //State machine reg 
+    reg        [7:0] r_SM_Main;   //State machine reg 
 
   
   localparam [7:0] INITIALIZE    =  8'b00000000;
@@ -101,7 +108,7 @@ module top_module (
       .o_SPI_Clk(o_SPI_Clk    ),
       .i_SPI_MISO(i_SPI_MISO  ),
       .o_SPI_MOSI(o_SPI_MOSI  ),
-      //.o_SPI_CS_n(w_SPI_CS_n  )   //testing CS pulled low always
+      //.o_SPI_CS_n(w_SPI_CS_n  )   //testing CS pulled low always - had issues 
       .o_SPI_CS_n(o_SPI_CS_n  )
   );
 //PID Controller Submodule
@@ -114,17 +121,20 @@ module top_module (
     .Ki(w_Ki                          ), 
     .Kd(w_Kd                          ),
     .clk_prescaler(w_clk_prescaler    ),
-    .control_signal(                  )  
+    .control_signal(w_control_out     )  
   ); 
 
   PWM_Generator_Verilog pwmController (
-    .clk(i_clk   ), 
-    .pwm0_set(   ), 
-    .pwm1_set(   ), 
-    .pwm2_set(   ), 
-    .PWM_OUT0(o_pwm0),
-    .PWM_OUT1(o_pwm1),
-    .PWM_OUT2(o_pwm2)
+    .clk(i_clk                    ),
+/* 
+    .pwm0_set(), 
+    .pwm1_set(), 
+    .pwm2_set(), 
+*/
+    .controls_input(w_control_out ), 
+    .PWM_OUT0(o_pwm0              ),
+    .PWM_OUT1(o_pwm1              ),
+    .PWM_OUT2(o_pwm2              )
   ); 
 
   always @(posedge i_clk or negedge w_reset) begin 
@@ -179,6 +189,18 @@ module top_module (
          end
      endcase 
   end 
-  
-
+ //demux logic for controls output  
+ //jk probably dont need 
+/*
+always@(*) begin 
+   if(w_sel == 0) begin 
+	w_demux0 <= w_control_out; 
+   else if (w_sel == 1) begin 
+	w_demux1 <= w_control_out; 
+   else if (w_sel == 2) begin 
+	w_demux2 <= w_control_out;
+ end 
+end
+*/
+ 
 endmodule
