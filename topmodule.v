@@ -35,7 +35,8 @@ module top_module (
 
     wire [15:0] w_control_out;
     wire [15:0] w_feedback_in;
-    reg  [15:0] w_clk_prescaler;
+    wire [15:0] w_clk_prescaler; 
+    //reg  [15:0] r_clk_prescaler;
 /*
     wire [15:0]	w_demux0;
     wire [15:0]	w_demux1; 
@@ -80,8 +81,9 @@ module top_module (
   assign w_Ki       = 16'h0001;  
   assign w_Kd       = 16'h0000;
 
-  assign w_clk_prescaler = 16'h0004;
-
+  //assign r_clk_prescaler  = 16'h0004;
+  assign w_clk_prescaler  = 16'h0004;
+ 
   assign w_feedback_lower     = 8'b00000000; 
   assign w_feedback_in [15:8] = w_feedback_upper; 
   assign w_feedback_in [7:0]  = w_feedback_lower; 
@@ -120,7 +122,8 @@ module top_module (
     .Kp(w_Kp                          ), 
     .Ki(w_Ki                          ), 
     .Kd(w_Kd                          ),
-    .clk_prescaler(w_clk_prescaler    ),
+    //.clk_prescaler(r_clk_prescaler    ),
+    .clk_prescaler(w_clk_prescaler),
     .control_signal(w_control_out     )  
   ); 
 
